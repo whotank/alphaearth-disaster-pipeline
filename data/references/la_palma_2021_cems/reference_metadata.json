@@ -1,0 +1,31 @@
+{
+  "source_title": "Copernicus EMSR546 Monitoring 63 La Palma lava-flow extent",
+  "source_id": "EMSR546 AOI01 GRA MONIT63",
+  "source_url": "https://mapping.emergency.copernicus.eu/activations/EMSR546/",
+  "observation_start": "2021-12-17T19:38:00Z",
+  "observation_end": "2021-12-17T19:38:00Z",
+  "license": "Copernicus EMS On-Demand Mapping: free, full and open access permitting reproduction, distribution, communication, adaptation, and combination with source acknowledgement.",
+  "reference_semantics": "Binary affected-area footprint. Outside the polygon is a valid negative only within the configured analysis AOI.",
+  "prepared_utc": "2026-08-15T23:49:24.767735+00:00",
+  "input_path": "data/references/la_palma_2021_cems/source/EMSR546_AOI01_GRA_MONIT63_observedEventA_r1_v1.shp",
+  "input_sha256": "e1c18122cd0e2c9d635ea1d5d4e82f23063cf1db4bd8f8f98468819ce1f5b8ca",
+  "output_geojson": "data/references/la_palma_2021_cems/lava_flow_footprint.geojson",
+  "output_sha256": "debd82bb36cace566d4b4873bffac182387d299da249f083eefcd1ab17b76ea4",
+  "source_feature_count": 1,
+  "polygon_feature_count": 1,
+  "source_crs": "EPSG:4326",
+  "output_crs": "EPSG:4326",
+  "output_bounds_wgs84": [
+    -17.934693055999958,
+    28.599174647000044,
+    -17.863332037999953,
+    28.63232017300004
+  ],
+  "affected_area_km2": 12.410760275061504,
+  "source_archive": "data/references/la_palma_2021_cems/source.zip",
+  "source_archive_sha256": "148a05c6e205b87c31716d59659a53ebd6e8ca89d8731e57052e3c2fcb50ae26",
+  "valid_support_geojson": "data/references/la_palma_2021_cems/valid_observation_footprint.geojson",
+  "valid_support_sha256": "e39dd19ab74de63bd417f006ac56744b11ec10433024fd88437d1b363a3c7654",
+  "valid_support_rule": "areaOfInterestA intersect Image Footprint source 67, minus matching Not Analysed features",
+  "valid_support_area_km2": 80.24471757085206
+}

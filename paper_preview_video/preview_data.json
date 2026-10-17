@@ -1,0 +1,88 @@
+{
+  "schema": "reo2_paper_preview_v1",
+  "title": "Reusable Change Signal",
+  "subtitle": "An outcome-blind audit of annual Earth embeddings",
+  "repository": "github.com/whotank/alphaearth-disaster-pipeline",
+  "paper_statistics": {
+    "alphaearth_dimensions": 64,
+    "alphaearth_pixel_m": 10,
+    "heldout_fire_events": 10,
+    "heldout_h3_cells": 6864,
+    "heldout_h3_resolution": 8,
+    "alphaearth_median_rho": 0.7118062077520637,
+    "alphaearth_contrast_mean": -0.11579850535759022,
+    "alphaearth_contrast_ci95": [
+      -0.3934149677531503,
+      0.0785601530541079
+    ],
+    "tessera_events": 9,
+    "tessera_contrast_mean": -0.09196250427991957,
+    "tessera_contrast_ci95": [
+      -0.3154114879540012,
+      0.09448692119672926
+    ],
+    "development_events": 8,
+    "development_positive_events": 8
+  },
+  "examples": [
+    {
+      "key": "woolsey",
+      "label": "Woolsey Fire",
+      "event_year": 2018,
+      "pre_year": 2017,
+      "post_year": 2019,
+      "reference": "MTBS burn severity",
+      "rho": 0.7568721702749364,
+      "h3_resolution": 8,
+      "h3_cells": 434,
+      "before": "outputs/reo2_fire_lava_visual_pair/woo/before.png",
+      "after": "outputs/reo2_fire_lava_visual_pair/woo/after.png",
+      "reference_image": "outputs/reo2_fire_lava_visual_pair/woo/mapped_reference_mask.png",
+      "ecs_image": "outputs/reo2_fire_lava_visual_pair/woo/alphaearth_ecs_original_support_mask.png"
+    },
+    {
+      "key": "kilauea",
+      "label": "Kīlauea eruption",
+      "event_year": 2018,
+      "pre_year": 2017,
+      "post_year": 2019,
+      "reference": "USGS lava extent",
+      "rho": 0.774034359881,
+      "h3_resolution": 8,
+      "h3_cells": 276,
+      "before": "outputs/reo2_fire_lava_visual_pair/kil/before.png",
+      "after": "outputs/reo2_fire_lava_visual_pair/kil/after.png",
+      "reference_image": "outputs/reo2_fire_lava_visual_pair/kil/mapped_reference_mask.png",
+      "ecs_image": "outputs/reo2_fire_lava_visual_pair/kil/alphaearth_ecs_original_support_mask.png"
+    }
+  ],
+  "development_families": [
+    {
+      "label": "Lava emplacement",
+      "events": 3,
+      "median_rho": 0.721,
+      "min_rho": 0.360,
+      "max_rho": 0.774
+    },
+    {
+      "label": "Forest loss",
+      "events": 2,
+      "median_rho": 0.349,
+      "min_rho": 0.235,
+      "max_rho": 0.464
+    },
+    {
+      "label": "Drought",
+      "events": 3,
+      "median_rho": 0.152,
+      "min_rho": 0.126,
+      "max_rho": 0.276
+    }
+  ],
+  "provenance": {
+    "heldout_event_data": "paper/reo2_primary_figure_data.csv",
+    "frozen_summary": "artifacts/release_summary.json",
+    "visual_manifest": "outputs/reo2_fire_lava_visual_pair/manifest_release.json",
+    "note": "All imagery, maps, and numerical values are existing project artifacts. No generated imagery is used."
+  }
+}

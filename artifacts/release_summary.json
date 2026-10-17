@@ -1,0 +1,73 @@
+{
+  "schema": "alphaearth_disaster_pipeline_release_summary_v1",
+  "release_date": "2026-10-16",
+  "h3_resolution": 8,
+  "h3_mean_cell_area_km2": 0.74,
+  "alphaearth_heldout": {
+    "events": 10,
+    "cells": 6864,
+    "positive_associations": 9,
+    "median_rho": 0.7118062077520637,
+    "rho_range": [
+      -0.378,
+      0.913
+    ],
+    "mean_incremental_contrast": -0.11579850535759022,
+    "incremental_contrast_ci95": [
+      -0.3934149677531503,
+      0.0785601530541079
+    ]
+  },
+  "tessera_secondary": {
+    "events_evaluable": 9,
+    "events_total": 10,
+    "median_rho": 0.679,
+    "rho_range": [
+      -0.008,
+      0.896
+    ],
+    "mean_incremental_contrast": -0.09196250427991957,
+    "incremental_contrast_ci95": [
+      -0.3154114879540012,
+      0.09448692119672926
+    ]
+  },
+  "development": {
+    "events": 8,
+    "positive_associations": 8,
+    "families": {
+      "lava": {
+        "events": 3,
+        "median_rho": 0.721,
+        "rho_range": [
+          0.36,
+          0.774
+        ]
+      },
+      "forest_loss": {
+        "events": 2,
+        "median_rho": 0.349,
+        "rho_range": [
+          0.235,
+          0.464
+        ]
+      },
+      "drought": {
+        "events": 3,
+        "median_rho": 0.152,
+        "rho_range": [
+          0.126,
+          0.276
+        ]
+      }
+    }
+  },
+  "primary_sources": {
+    "heldout_metrics": "studies/mtbs_heldout_20260817/outputs/analysis/per_event_metrics.csv",
+    "heldout_inference": "studies/mtbs_heldout_20260817/outputs/analysis/primary_inference.json",
+    "tessera_metrics": "outputs/tessera_mtbs_secondary/per_event_metrics.csv",
+    "tessera_inference": "outputs/tessera_mtbs_secondary/inference.json",
+    "development_metrics": "paper/reo2_primary_figure_data.csv",
+    "spatial_sensitivity": "outputs/reo2_development_spatial_robustness"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "absolute_tolerance": 1e-10,
+  "all_events_passed": true,
+  "amendment_path": "paper/DEVELOPMENT_SPATIAL_ROBUSTNESS_PROTOCOL_AMENDMENT_1.json",
+  "amendment_sha256": "c4e05a5c44ce135da5fe3b2942d5fd6592115895225b7242c56a346c65a29156",
+  "baseline_commit": "9728c04778f13c4dc80a65ff2f20439129374ff9",
+  "event_results": [
+    {
+      "event_key": "four_corners_drought_2018",
+      "failures": [],
+      "file_comparisons": {
+        "integrity_report.json": {
+          "failures": [],
+          "maximum_absolute_difference": 0.0,
+          "maximum_absolute_difference_path": "integrity_report.json.pct_data_lost_vs_alpha",
+          "maximum_relative_difference": 0.0,
+          "maximum_relative_difference_path": "integrity_report.json.pct_data_lost_vs_alpha",
+          "numeric_values_compared": 1,
+          "passed": true
+        },
+        "qa_official_numeric_summary.json": {
+          "failures": [],
+          "maximum_absolute_difference": 1.1102230246251565e-16,
+          "maximum_absolute_difference_path": "qa_official_numeric_summary.json.ecs_mean_describe.max",
+          "maximum_relative_difference": 1.844804309073743e-15,
+          "maximum_relative_difference_path": "qa_official_numeric_summary.json.corr_pearson_benchmark_vs_ecs",
+          "numeric_values_compared": 32,
+          "passed": true
+        },
+        "usdm_official_validation.json": {
+          "failures": [],
+          "maximum_absolute_difference": 1.1102230246251565e-16,
+          "maximum_absolute_difference_path": "usdm_official_validation.json.official_vs_mirror_pearson",
+          "maximum_relative_difference": 1.9597710376098908e-15,
+          "maximum_relative_difference_path": "usdm_official_validation.json.mirror_vs_ecs_pearson",
+          "numeric_values_compared": 14,
+          "passed": true
+        }
+      },
+      "original_recorded_parquet_sha256": {
+        "alphaearth_h3_ecs.parquet": "27281660ac7356d408be43fcb86461676391e415b250bb386675371405b47e4e",
+        "benchmark_h3.parquet": "dd13a2c230575dd92b4389ac5c7bf11be81936f794876de62af0709797055bf5",
+        "joined_inner.parquet": "904630f257bca39a3a5ccd2902f34eee25235f23b3c618f1316ec0da107a8a68",
+        "joined_official.parquet": "755fff6bdb413ce4462b18130323aff827903644e6e546ac242db573e52b84e6",
+        "usdm_official_h3.parquet": "287fd995bba1532b1c22f383c2d365b8a445aaf5c4ef5a813f437487b8ac20f8"
+      },
+      "passed": true,
+      "source_hash_checks": {
+        "aoi": {
+          "expected_sha256": "c855ac92d7bd3dea51905fb94305e783f8804bc5b22c3ad8b086f64613f608ba",
+          "observed_sha256": "c855ac92d7bd3dea51905fb94305e783f8804bc5b22c3ad8b086f64613f608ba",
+          "passed": true,
+          "path": "data/references/usdm/aoi_upper_san_juan_huc6.geojson"
+        },
+        "post_archive": {
+          "expected_sha256": "e2214c9dfb3fe7c73351365afbac6c8a8a1ae0fac37abfcd96cb68b4bcb4f062",
+          "observed_sha256": "e2214c9dfb3fe7c73351365afbac6c8a8a1ae0fac37abfcd96cb68b4bcb4f062",
+          "passed": true,
+          "path": "data/references/usdm/raw/2018_USDM_M.zip"
+        },
+        "pre_archive": {
+          "expected_sha256": "075bfd75a42905e2ca08a910138beef2ae89155403094fa25fb9b22e9eccc01f",
+          "observed_sha256": "075bfd75a42905e2ca08a910138beef2ae89155403094fa25fb9b22e9eccc01f",
+          "passed": true,
+          "path": "data/references/usdm/raw/2017_USDM_M.zip"
+        }
+      },
+      "structure": {
+        "all_h3_sets_equal": true,
+        "artifact_sha256": {
+          "alphaearth_h3_ecs": "d2686376957052ee2b741ed4e2a35565271527310b7abe0b53fc33ec5c48d54b",
+          "benchmark_h3_mirror": "a6f02899af92da1051ed2c4796db0a9efcdb1688b78b6eee8e3f6be35f3dcdd1",
+          "joined_official": "6732bdc85238e80b6c54450471cd56a728a843254ffcd8c4f272d9829d2d718c",
+          "usdm_official_h3": "287fd995bba1532b1c22f383c2d365b8a445aaf5c4ef5a813f437487b8ac20f8"
+        },
+        "expected_cells": 922,
+        "expected_resolution": 6,
+        "failures": [],
+        "observed_rows": {
+          "alphaearth_h3_ecs": 922,
+          "benchmark_h3_mirror": 922,
+          "joined_official": 922,
+          "usdm_official_h3": 922
+        },
+        "passed": true
+      }
+    },
+    {
+      "event_key": "north_dakota_drought_2021",
+      "failures": [],
+      "file_comparisons": {
+        "integrity_report.json": {
+          "failures": [],
+          "maximum_absolute_difference": 0.0,
+          "maximum_absolute_difference_path": "integrity_report.json.pct_data_lost_vs_alpha",
+          "maximum_relative_difference": 0.0,
+          "maximum_relative_difference_path": "integrity_report.json.pct_data_lost_vs_alpha",
+          "numeric_values_compared": 1,
+          "passed": true
+        },
+        "qa_official_numeric_summary.json": {
+          "failures": [],
+          "maximum_absolute_difference": 4.440892098500626e-16,
+          "maximum_absolute_difference_path": "qa_official_numeric_summary.json.ecs_mean_describe.max",
+          "maximum_relative_difference": 4.267659944860289e-16,
+          "maximum_relative_difference_path": "qa_official_numeric_summary.json.corr_pearson_benchmark_vs_ecs",
+          "numeric_values_compared": 32,
+          "passed": true
+        },
+        "usdm_official_validation.json": {
+          "failures": [],
+          "maximum_absolute_difference": 2.220446049250313e-16,
+          "maximum_absolute_difference_path": "usdm_official_validation.json.official_vs_mirror_pearson",
+          "maximum_relative_difference": 4.267659944860289e-16,
+          "maximum_relative_difference_path": "usdm_official_validation.json.official_qa_pearson",
+          "numeric_values_compared": 14,
+          "passed": true
+        }
+      },
+      "original_recorded_parquet_sha256": {
+        "alphaearth_h3_ecs.parquet": "c82462177bdebe6a73216acf3588d6e829beff3b746be2e2eb5bac57a279f551",
+        "benchmark_h3.parquet": "2a7758330fdea7ffbdbea3a566db94d8c6bb5aaad78a09895b98b7b235980844",
+        "joined_inner.parquet": "2d508576b67b15e3f5005ff321218dde64209509235b0c0881e49b58fb037233",
+        "joined_official.parquet": "df2c6464efb9db3ec0ccb5654b74bed656a908d5cc87a428c93a6acef21f901d",
+        "usdm_official_h3.parquet": "2bcd2af4f189fc2c1818ece13ff6ab4fd507de4da1892082ddd74919a0e6249e"
+      },
+      "passed": true,
+      "source_hash_checks": {
+        "aoi": {
+          "expected_sha256": "17d017e51a632ba0caea01ba00cf3b61d1c386b8cdbba6ebe1e302b5790c8ef9",
+          "observed_sha256": "17d017e51a632ba0caea01ba00cf3b61d1c386b8cdbba6ebe1e302b5790c8ef9",
+          "passed": true,
+          "path": "data/references/usdm/aoi_north_dakota.geojson"
+        },
+        "post_archive": {
+          "expected_sha256": "cd2f6d7e6a0eb2febdbdca1dc2a3f0621e424b5f7e00c5bcd585fc7cf3536c39",
+          "observed_sha256": "cd2f6d7e6a0eb2febdbdca1dc2a3f0621e424b5f7e00c5bcd585fc7cf3536c39",
+          "passed": true,
+          "path": "data/references/usdm/raw/2021_USDM_M.zip"
+        },
+        "pre_archive": {
+          "expected_sha256": "35a8a4351ccba95a8cb80d25b4293571c48f511b919a5375523466197a85dd90",
+          "observed_sha256": "35a8a4351ccba95a8cb80d25b4293571c48f511b919a5375523466197a85dd90",
+          "passed": true,
+          "path": "data/references/usdm/raw/2020_USDM_M.zip"
+        }
+      },
+      "structure": {
+        "all_h3_sets_equal": true,
+        "artifact_sha256": {
+          "alphaearth_h3_ecs": "211e2ea7e1eb305e724b90a9c8821ea11439b01d08d2f8470753b57cf40a4c83",
+          "benchmark_h3_mirror": "3abe241cc27d35a93f7154a777581375701ce29ca578cbc33a4c05c0075c6264",
+          "joined_official": "ab32d3c7788790b0a00bcc6cb2bf37d20ad14fb2e771e05559bf7a28085c4456",
+          "usdm_official_h3": "2bcd2af4f189fc2c1818ece13ff6ab4fd507de4da1892082ddd74919a0e6249e"
+        },
+        "expected_cells": 4939,
+        "expected_resolution": 6,
+        "failures": [],
+        "observed_rows": {
+          "alphaearth_h3_ecs": 4939,
+          "benchmark_h3_mirror": 4939,
+          "joined_official": 4939,
+          "usdm_official_h3": 4939
+        },
+        "passed": true
+      }
+    },
+    {
+      "event_key": "iowa_drought_recovery_2024",
+      "failures": [],
+      "file_comparisons": {
+        "integrity_report.json": {
+          "failures": [],
+          "maximum_absolute_difference": 0.0,
+          "maximum_absolute_difference_path": "integrity_report.json.pct_data_lost_vs_alpha",
+          "maximum_relative_difference": 0.0,
+          "maximum_relative_difference_path": "integrity_report.json.pct_data_lost_vs_alpha",
+          "numeric_values_compared": 1,
+          "passed": true
+        },
+        "qa_official_numeric_summary.json": {
+          "failures": [],
+          "maximum_absolute_difference": 2.220446049250313e-16,
+          "maximum_absolute_difference_path": "qa_official_numeric_summary.json.ecs_by_benchmark_quartile[3].ecs_mean_median",
+          "maximum_relative_difference": 3.2157992137143854e-16,
+          "maximum_relative_difference_path": "qa_official_numeric_summary.json.ecs_by_benchmark_quartile[3].ecs_mean_median",
+          "numeric_values_compared": 32,
+          "passed": true
+        },
+        "usdm_official_validation.json": {
+          "failures": [],
+          "maximum_absolute_difference": 2.220446049250313e-16,
+          "maximum_absolute_difference_path": "usdm_official_validation.json.official_vs_mirror_pearson",
+          "maximum_relative_difference": 8.024492439300838e-16,
+          "maximum_relative_difference_path": "usdm_official_validation.json.mirror_vs_ecs_pearson",
+          "numeric_values_compared": 14,
+          "passed": true
+        }
+      },
+      "original_recorded_parquet_sha256": {
+        "alphaearth_h3_ecs.parquet": "865a91c9ace97093df34be895fe7147883a3ec577f79b07d319ae96982091d09",
+        "benchmark_h3.parquet": "bfd8c6fe4e4a3a7062c6779b140ead709f93c80c6c085b0e25964d3d0c2256f8",
+        "joined_inner.parquet": "83e00391e0127b793d3ba45185488d1a6bafca9454c6d652387e3b8b6e3afab1",
+        "joined_official.parquet": "f8f5862a50c2740cf9a70829cfe7c2ead7be54307f11861d98d2415bd3f2f099",
+        "usdm_official_h3.parquet": "e951ae42173109e301c977c2adefae386be4d31081123942e82134eb7f12f9ea"
+      },
+      "passed": true,
+      "source_hash_checks": {
+        "aoi": {
+          "expected_sha256": "921d04f45c17a34ec4b52be221db66cb59c7ed959d8f710ce3e70ec5e833a082",
+          "observed_sha256": "921d04f45c17a34ec4b52be221db66cb59c7ed959d8f710ce3e70ec5e833a082",
+          "passed": true,
+          "path": "data/references/usdm/aoi_iowa.geojson"
+        },
+        "post_archive": {
+          "expected_sha256": "74bb5b9430619642cf677995126a9227c623d05fc26727116787f79422f0e556",
+          "observed_sha256": "74bb5b9430619642cf677995126a9227c623d05fc26727116787f79422f0e556",
+          "passed": true,
+          "path": "data/references/usdm/raw/2024_USDM_M.zip"
+        },
+        "pre_archive": {
+          "expected_sha256": "dc87d41dc4f9283f8330a45837c99884ea338543be753207861e51cce8208007",
+          "observed_sha256": "dc87d41dc4f9283f8330a45837c99884ea338543be753207861e51cce8208007",
+          "passed": true,
+          "path": "data/references/usdm/raw/2023_USDM_M.zip"
+        }
+      },
+      "structure": {
+        "all_h3_sets_equal": true,
+        "artifact_sha256": {
+          "alphaearth_h3_ecs": "b25f2f546d41d55c3bf803fd05d00e7a8ae9f41284b9ad86b6428b6664caf668",
+          "benchmark_h3_mirror": "df475bb0b1fc62f6984007f2676fdd2bcd7618841a0d79b328dcb5f42dbba466",
+          "joined_official": "8d99568e3fdd0e06a419371c874d943fe14eb4bb61e0de0ff0e44c2430899375",
+          "usdm_official_h3": "e951ae42173109e301c977c2adefae386be4d31081123942e82134eb7f12f9ea"
+        },
+        "expected_cells": 4046,
+        "expected_resolution": 6,
+        "failures": [],
+        "observed_rows": {
+          "alphaearth_h3_ecs": 4046,
+          "benchmark_h3_mirror": 4046,
+          "joined_official": 4046,
+          "usdm_official_h3": 4046
+        },
+        "passed": true
+      }
+    }
+  ],
+  "excluded_byte_hash_fields": [
+    "alphaearth_h3_ecs_sha256",
+    "benchmark_h3_mirror_sha256",
+    "joined_official_sha256",
+    "usdm_official_h3_sha256"
+  ],
+  "relative_tolerance": 1e-10,
+  "validation_id": "reo2-drought-regeneration-validation-v1"
+}

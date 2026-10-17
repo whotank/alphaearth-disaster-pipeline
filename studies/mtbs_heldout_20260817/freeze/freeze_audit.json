@@ -1,0 +1,11 @@
+{
+  "audit_schema": "alphaearth_mtbs_freeze_audit_v1",
+  "base_commit": "2a6fb2933f535d6372d7bd1d7eb5158be7d2345f",
+  "byte_count": 19088,
+  "canonical_file": "freeze/canonical.json",
+  "canonical_sha256": "eb204cfc9d4a16d9c27db4d7641c4ebf3e6fc98ae637ed71a9a7c50a4a32794e",
+  "canonicalization": "UTF-8 json.dumps(sort_keys=True,separators=(comma,colon),ensure_ascii=True); no trailing newline",
+  "source_task_id": "20759cb0-84c8-4dd2-8e63-b48f2ac0bb79",
+  "verified": true,
+  "verified_at_utc": "2026-08-17T14:45:23Z"
+}

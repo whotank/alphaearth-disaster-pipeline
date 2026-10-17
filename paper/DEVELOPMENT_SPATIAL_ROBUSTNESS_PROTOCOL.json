@@ -1,0 +1,137 @@
+{
+  "protocol_id": "reo2-development-spatial-robustness-v1",
+  "frozen_at_utc": "2026-08-23T23:31:00Z",
+  "status": "frozen_post_hoc_sensitivity",
+  "freeze_note": "The final protocol was written before any regenerated drought publication join or new drought block outcome existed. Rules reuse the previously declared block analysis and previously defined multiscale support thresholds.",
+  "purpose": "Test whether the positive AlphaEarth-reference correlations in the eight fixed development cases remain directionally stable after coarse spatial aggregation and are unusual under an approximate block-label permutation null.",
+  "disclosure": {
+    "known_before_freeze": [
+      "All eight fine-H3 development-case Spearman point estimates were known to be positive.",
+      "The parent-level-2 block results for the three lava and two forest-loss cases had already been computed in a separate broader sensitivity analysis.",
+      "The three drought parent-block outcomes had not been computed.",
+      "This protocol is post hoc and is not held-out validation or a third-party preregistration."
+    ],
+    "prohibited_claims": [
+      "population-level prevalence or effect size",
+      "generalization to future events",
+      "hazard detection or attribution",
+      "independent-cell inference",
+      "confirmation of a semantic embedding axis"
+    ]
+  },
+  "fixed_events": [
+    {
+      "event_key": "kilauea_lava_2018",
+      "family": "lava",
+      "join_artifact": "outputs/kilauea_lava_2018/joined_inner.parquet",
+      "expected_sha256": "dfbf390feb22b4860883e6e8903443bdb3e038dae1061d6be6ee8f81c8ce6be9"
+    },
+    {
+      "event_key": "la_palma_lava_2021",
+      "family": "lava",
+      "join_artifact": "outputs/la_palma_lava_2021/joined_inner.parquet",
+      "expected_sha256": "b5786c0d90f17009513862810f1fa5249e27e5980298ec178e0035e6331bdabb"
+    },
+    {
+      "event_key": "mauna_loa_lava_2022",
+      "family": "lava",
+      "join_artifact": "outputs/mauna_loa_lava_2022/joined_inner.parquet",
+      "expected_sha256": "19dcd4642dc7fb959bbb9d4c80b9e710480ffdc800ca39567e18165ec05019be"
+    },
+    {
+      "event_key": "pacific_nw_forest_loss_2021",
+      "family": "forest_loss",
+      "join_artifact": "outputs/pacific_nw_forest_loss_2021/joined_inner.parquet",
+      "expected_sha256": "e9da562c082061fbd3c2a3816a0d6d688a1a12f80d5d124639263846f2f7b379"
+    },
+    {
+      "event_key": "georgia_forest_loss_2021",
+      "family": "forest_loss",
+      "join_artifact": "outputs/georgia_forest_loss_2021/joined_inner.parquet",
+      "expected_sha256": "380469953831b0a63c88556da2749550d065a431fb7c653c53cf8f5d1672e66b"
+    },
+    {
+      "event_key": "four_corners_drought_2018",
+      "family": "drought",
+      "join_artifact": "outputs/four_corners_drought_2018/joined_official.parquet",
+      "expected_sha256": "755fff6bdb413ce4462b18130323aff827903644e6e546ac242db573e52b84e6"
+    },
+    {
+      "event_key": "north_dakota_drought_2021",
+      "family": "drought",
+      "join_artifact": "outputs/north_dakota_drought_2021/joined_official.parquet",
+      "expected_sha256": "df2c6464efb9db3ec0ccb5654b74bed656a908d5cc87a428c93a6acef21f901d"
+    },
+    {
+      "event_key": "iowa_drought_recovery_2024",
+      "family": "drought",
+      "join_artifact": "outputs/iowa_drought_recovery_2024/joined_official.parquet",
+      "expected_sha256": "f8f5862a50c2740cf9a70829cfe7c2ead7be54307f11861d98d2415bd3f2f099"
+    }
+  ],
+  "input_policy": {
+    "required_columns": [
+      "h3_index",
+      "ecs_mean",
+      "benchmark_mean"
+    ],
+    "publication_join_only": true,
+    "exact_sha256_required_for_existing_artifacts": true,
+    "regenerated_artifact_policy": "If a missing artifact must be regenerated and its binary SHA-256 differs, stop before analysis. Record the mismatch and define a protocol amendment before inspecting any new block result.",
+    "missing_event_policy": "Stop the eight-case aggregate analysis. Do not replace or omit an event."
+  },
+  "primary_analysis": {
+    "fine_cell_role": "descriptive_only",
+    "parent_levels": 2,
+    "minimum_finite_cells_per_parent": 7,
+    "minimum_retained_parents": 8,
+    "parent_summary": "unweighted arithmetic mean computed separately for ECS and the mapped reference",
+    "statistic": "two-sided Spearman correlation across retained paired parent means",
+    "permutation_null": "hold ECS parent means fixed and freely permute the complete mapped-reference parent-mean vector",
+    "iterations": 9999,
+    "master_seed": 20260815,
+    "seed_derivation": "Primary parent-level-2 tests use the existing stable SHA-256 derivation from event_key. Descriptive parent-level-1 and parent-level-3 tests use the same derivation from event_key plus ':parent_levels=<level>'.",
+    "monte_carlo_p_formula": "(1 + absolute-null exceedances) / (1 + iterations)",
+    "null_envelope": [
+      0.025,
+      0.975
+    ],
+    "null_envelope_label": "95% permutation null envelope, not a confidence interval",
+    "multiplicity": "Holm family-wise adjustment across all eight primary per-event tests; ineligible events remain in the denominator and are reported as not assessable"
+  },
+  "scale_sensitivity": {
+    "status": "post_hoc_descriptive",
+    "fixed_parent_levels": [
+      1,
+      2,
+      3
+    ],
+    "primary_parent_levels": 2,
+    "minimum_finite_cells_rule": "ceil((7 ** parent_levels) / 7), preserving the primary one-seventh parent-capacity threshold; this gives 1, 7, and 49 cells for parent levels 1, 2, and 3",
+    "minimum_retained_parents": 8,
+    "selection_rule": "No scale may replace the primary result. Report every eligible fixed scale.",
+    "directionally_stable_definition": "observed block Spearman is positive at every eligible fixed scale",
+    "incomplete_scale_definition": "not fully assessable, not a pass"
+  },
+  "aggregate_summary": {
+    "event_weighting": "equal",
+    "report": [
+      "positive and negative primary block-correlation count",
+      "median and range of primary block correlations",
+      "exact two-sided sign-test p-value as descriptive fixed-case evidence"
+    ],
+    "interpretation": "conditional summary of these eight fixed cases only"
+  },
+  "interpretation_rules": {
+    "per_event_permutation_supported": "positive primary block correlation and Holm-adjusted two-sided p-value below 0.05",
+    "directionally_stable": "positive at every eligible fixed scale",
+    "spatially_robust_within_case": "permutation-supported and directionally stable, with no scale selected by outcome",
+    "discordant_results": "Report disagreement between fine-cell, primary-block, and scale-sensitivity results without privileging the favorable result.",
+    "manuscript_gate": "Any manuscript statement must label this as a frozen post hoc spatial sensitivity and must not use it to convert development evidence into held-out validation."
+  },
+  "output_namespace": "outputs/reo2_development_spatial_robustness",
+  "forbidden_inputs": [
+    "outputs/alphaearth_dimension_correlation_study",
+    "checkpoints or matrices from the invalidated dimension-correlation study"
+  ]
+}

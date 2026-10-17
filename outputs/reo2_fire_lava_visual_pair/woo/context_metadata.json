@@ -1,0 +1,28 @@
+{
+  "after_sha256": "b12c76fac4726f7a325a733fe1e95dea0d547abc1540803ff7262a38db6b56f3",
+  "before_sha256": "8d3dfef022100299d61daa9aa5702f28a5d589ece29656a6f6c2b8ea3e5b3b8b",
+  "collection": "COPERNICUS/S2_SR_HARMONIZED",
+  "composite": "SCL-masked full-calendar median",
+  "fingerprint": "8a5f17e1d9c7219ecccfd9a57e4b318aebc6b13200f77a61e416bf1807f1ea77",
+  "post_year": 2019,
+  "pre_year": 2017,
+  "requested_scale_m": 30,
+  "source_attempt_metadata": {
+    "attempt_metadata_sha256": "96b3d874b4a46c407c5238ba5064cb3151ffc92b496faac204c6713bade9f9db",
+    "collection": "COPERNICUS/S2_SR_HARMONIZED",
+    "post_scene_count": 217,
+    "pre_scene_count": 197,
+    "scene_cloud_filter_lte_pct": 70.0,
+    "scl_excluded_classes": [
+      0,
+      1,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "used_scale_m": 30
+}

@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software or artifact, please cite the paper below."
+title: "AlphaEarth disaster pipeline and frozen evaluation artifact"
+type: software
+version: 1.0.0
+date-released: 2026-10-16
+license: MIT
+repository-code: "https://github.com/whotank/alphaearth-disaster-pipeline"
+url: "https://github.com/whotank/alphaearth-disaster-pipeline"
+authors:
+  - given-names: Hootan
+    family-names: Kamran
+    affiliation: Northeastern University
+    email: h.kamranhabibkhani@northeastern.edu
+  - given-names: Houman
+    family-names: Kamran Habibkhani
+    affiliation: University of the Pacific
+    email: hkamranhabibkhani@pacific.edu
+  - given-names: Atanaz
+    family-names: Dorrani
+    affiliation: City of Mississauga
+    email: a.dorraniarab@gmail.com
+abstract: >-
+  Code and frozen evidence for an outcome-blind evaluation of annual
+  AlphaEarth embedding displacement against mapped fire severity, lava
+  emplacement, forest loss, and drought references, with a prespecified
+  TESSERA comparison.
+preferred-citation:
+  type: conference-paper
+  title: "Reusable Change Signal: An Outcome-Blind Audit of Annual Earth Embeddings"
+  authors:
+    - given-names: Hootan
+      family-names: Kamran
+      affiliation: Northeastern University
+    - given-names: Houman
+      family-names: Kamran Habibkhani
+      affiliation: University of the Pacific
+    - given-names: Atanaz
+      family-names: Dorrani
+      affiliation: City of Mississauga
+  year: 2026
+  collection-title: "2nd Workshop on Advances in Representation Learning for Earth Observation at NeurIPS 2026"

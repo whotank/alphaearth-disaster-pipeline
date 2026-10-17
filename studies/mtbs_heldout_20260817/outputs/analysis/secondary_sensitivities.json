@@ -1,0 +1,18 @@
+{
+  "labeled_secondary": true,
+  "schema": "alphaearth_mtbs_secondary_sensitivity_v1",
+  "summaries": [
+    {
+      "events_available": 10,
+      "mean_D": -0.11541431318532784,
+      "primary_eligibility_changed": false,
+      "sensitivity": "aggregate_to_h3_r7"
+    },
+    {
+      "events_available": 10,
+      "mean_D": -0.11646052284042532,
+      "primary_eligibility_changed": false,
+      "sensitivity": "higher_support_thresholds"
+    }
+  ]
+}

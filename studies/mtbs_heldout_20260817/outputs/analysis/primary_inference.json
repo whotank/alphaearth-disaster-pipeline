@@ -1,0 +1,28 @@
+{
+  "bootstrap": {
+    "ci_95": [
+      -0.3934149677531503,
+      0.0785601530541079
+    ],
+    "method": "event resampling with replacement; percentile interval",
+    "replicates": 100000,
+    "seed": 20260817
+  },
+  "cell_level_p_values": false,
+  "descriptive_exact": {
+    "event_sign_flips": 1024,
+    "label": "descriptive exact paired sign/randomization summaries",
+    "negative_D_events": 6,
+    "positive_D_events": 4,
+    "primary_inference_changed": false,
+    "two_sided_exact_sign_p": 0.75390625,
+    "two_sided_randomization_p": 0.546875,
+    "zero_D_events": 0
+  },
+  "independent_unit": "event",
+  "mean_D": -0.11579850535759022,
+  "median_D_descriptive": -0.011807711921263009,
+  "n_events": 10,
+  "paper_recommendation": "The mean endpoint is negative, but the event-bootstrap interval includes zero. Do not present this study as confirmatory evidence of an ECS advantage; if included, report it symmetrically as an inconclusive prospective replication.",
+  "schema": "alphaearth_mtbs_primary_inference_v1"
+}

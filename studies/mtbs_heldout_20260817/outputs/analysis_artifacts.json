@@ -1,0 +1,14 @@
+{
+  "files": [
+    "outputs/analysis/per_event_metrics.csv",
+    "outputs/analysis/per_event_metrics.json",
+    "outputs/analysis/primary_inference.json",
+    "outputs/analysis/secondary_sensitivities.csv",
+    "outputs/analysis/secondary_sensitivities.json",
+    "outputs/analysis/methodology_report.md",
+    "outputs/analysis/figures/event_endpoints.png",
+    "outputs/analysis/figures/event_bootstrap.png"
+  ],
+  "population_freeze_sha256": "740b1186e893189606411ada3f0c7c59dc8e97ff5c54ed661ca5d714947a2c7c",
+  "schema": "alphaearth_mtbs_analysis_artifacts_v1"
+}

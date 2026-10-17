@@ -1,0 +1,93 @@
+{
+  "amendment_id": "reo2-development-spatial-robustness-v1-amendment-1",
+  "parent_protocol_id": "reo2-development-spatial-robustness-v1",
+  "frozen_at_utc": "2026-08-24T01:55:00Z",
+  "status": "frozen_before_any_drought_block_outcome",
+  "trigger": {
+    "event_key": "four_corners_drought_2018",
+    "missing_original_artifact": "outputs/four_corners_drought_2018/alphaearth_h3_ecs.parquet",
+    "original_recorded_sha256": "27281660ac7356d408be43fcb86461676391e415b250bb386675371405b47e4e",
+    "regenerated_sha256": "d2686376957052ee2b741ed4e2a35565271527310b7abe0b53fc33ec5c48d54b",
+    "reason_for_stop": "The regenerated Parquet did not reproduce the original byte-level SHA-256.",
+    "outcome_boundary": "No drought parent-block aggregation, block correlation, permutation distribution, p-value, or multiscale result had been computed or inspected when this amendment was frozen."
+  },
+  "diagnostic_observation_allowed_before_amendment": {
+    "purpose": "Determine whether the mismatch was clearly substantive or could be serialization or machine-precision drift.",
+    "four_corners_ecs_rows": 922,
+    "four_corners_h3_resolution": 6,
+    "four_corners_ecs_summary_comparison": "Count and mean matched exactly; standard deviation, quartiles, and extrema matched the committed audit within 1.2e-16.",
+    "interpretation": "This is necessary but not sufficient validation. It does not authorize analysis by itself."
+  },
+  "committed_validation_baseline": {
+    "git_commit": "9728c04778f13c4dc80a65ff2f20439129374ff9",
+    "per_event_paths": [
+      "outputs/<event>/integrity_report.json",
+      "outputs/<event>/qa_official_numeric_summary.json",
+      "outputs/<event>/usdm_official_validation.json"
+    ],
+    "evidence_hash_registry": "outputs/evidence_release_consistency.json"
+  },
+  "scope": [
+    "four_corners_drought_2018",
+    "north_dakota_drought_2021",
+    "iowa_drought_recovery_2024"
+  ],
+  "replacement_input_rule": {
+    "original_rule": "Require the original publication-join binary SHA-256.",
+    "amended_rule": "For each missing drought publication join only, accept a newly regenerated join if and only if every validation gate below passes against the committed baseline. Existing lava and forest-loss artifacts still require exact original SHA-256 matches.",
+    "uniform_application": "The same gates and tolerances apply to all three drought events. No gate may be changed after any drought block outcome is computed.",
+    "failure_policy": "If any gate fails, stop the complete eight-case analysis. Do not omit, replace, or selectively relax an event."
+  },
+  "required_regeneration": {
+    "alphaearth": "Use the unchanged annual embedding mosaics, pre/post years, ECS formula, H3 cells, 10 m scale, tileScale 4, and mean+max+stdDev+p95 reducer from disaster_embedding_pipeline.py. Client-side checkpointing or request sharding may alter transport only, not the estimand.",
+    "official_usdm": "Use the exact archived NDMC annual vector ZIP files and AOI files whose SHA-256 values are recorded in the committed usdm_official_validation.json.",
+    "publication_join": "Use joined_official.parquet produced by usdm_official_h3.py. The Earth Engine USDM mirror remains an implementation cross-check, not the publication reference."
+  },
+  "validation_gates": {
+    "structural_exact": [
+      "event key, pre year, post year, season, score mapping, and weekly release-date lists",
+      "H3 row count, unique H3 set, and H3 resolution",
+      "required columns and finite ECS and official-reference values",
+      "publication_reference and mirror_role",
+      "official_reference_complete and the event-specific mirror agreement status, including the previously recorded Iowa mirror disagreement"
+    ],
+    "source_hash_exact": [
+      "pre-year NDMC archive",
+      "post-year NDMC archive",
+      "AOI GeoJSON"
+    ],
+    "recursive_audit_comparison": {
+      "files": [
+        "integrity_report.json",
+        "qa_official_numeric_summary.json",
+        "usdm_official_validation.json"
+      ],
+      "nonnumeric_values": "exact equality",
+      "integer_values": "exact equality",
+      "floating_values": "absolute difference at most 1e-10 and relative difference at most 1e-10",
+      "excluded_fields": [
+        "alphaearth_h3_ecs_sha256",
+        "benchmark_h3_mirror_sha256",
+        "usdm_official_h3_sha256",
+        "joined_official_sha256"
+      ],
+      "reason_for_exclusions": "These are byte-level hashes of regenerated Parquet files and are expected to change with serialization or machine-level reduction differences."
+    }
+  },
+  "new_frozen_manifest": {
+    "path": "outputs/reo2_development_spatial_robustness/drought_regeneration_validation.json",
+    "must_be_written_before_block_analysis": true,
+    "required_contents": [
+      "baseline commit and amendment SHA-256",
+      "old recorded and newly observed artifact SHA-256 values",
+      "every structural, source-hash, and recursive-comparison result",
+      "maximum absolute and relative numeric discrepancy by event and baseline file",
+      "overall pass=false if any individual check fails"
+    ]
+  },
+  "interpretation_effect": {
+    "post_hoc_status": "unchanged",
+    "claim_strength": "unchanged",
+    "additional_limitation": "The drought joins are reproducible reconstructions validated against committed audits, not byte-identical recovery of the missing original Parquet files."
+  }
+}

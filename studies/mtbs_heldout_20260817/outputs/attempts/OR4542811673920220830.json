@@ -1,0 +1,450 @@
+{
+  "attempt_sequence": 10,
+  "candidate_rank": 9,
+  "candidate_role": "primary",
+  "duration_seconds": 166.06098445897806,
+  "eligible": true,
+  "failed_gate": null,
+  "failure": null,
+  "fire_id": "OR4542811673920220830",
+  "freeze_sha256": "eb204cfc9d4a16d9c27db4d7641c4ebf3e6fc98ae637ed71a9a7c50a4a32794e",
+  "gate_results": {
+    "P01": "pass",
+    "P01_boundary_metadata": "pass",
+    "P01_raster_parse": "pass",
+    "P02": "pass",
+    "P02_exact_overlap": "pass",
+    "P03": "pass",
+    "P03_common_population": "pass",
+    "P04": "pass",
+    "P04_crs_scale_product": "pass",
+    "P04_source_identity": "pass",
+    "P05": "pass",
+    "P05_finite_nonconstant": "pass",
+    "P06_land_cover": "mismatch_report_only"
+  },
+  "h3_cap_applied": false,
+  "h3_center_cells": 979,
+  "h3_final_cells": 900,
+  "h3_final_sha256": "5ef850c86dc3fbe4c918f65dc064371f3470958bf9103dfa5bc1f4d7b7d16481",
+  "h3_mtbs_supported_cells": 900,
+  "h3_pre_cap_common_cells": 900,
+  "land_cover_audit": {
+    "class_fractions_unweighted_h3_mean": {
+      "10": 0.462114080658938,
+      "100": 5.867247999216537e-07,
+      "20": 8.238817355215138e-06,
+      "30": 0.5372058872961485,
+      "40": 0.00012817977726823593,
+      "50": 3.418347762489161e-05,
+      "60": 0.0004499638950017412,
+      "70": 0.0,
+      "80": 5.8879352863496e-05,
+      "90": 0.0,
+      "95": 0.0
+    },
+    "dominant_class_code": 30,
+    "dominant_class_label": "Grassland",
+    "eligibility_effect": "none",
+    "frozen_proxy": "forest_woodland",
+    "frozen_proxy_group": "forest_woodland",
+    "mismatch": true,
+    "observed_group": "grass_shrub_sparse",
+    "source": "ESA/WorldCover/v100"
+  },
+  "metadata_mismatches": [],
+  "name": "DOUBLE CREEK",
+  "overlap_audit": {
+    "all_time_union_fraction": 0.4935542838437162,
+    "all_time_union_intersection_m2": 341555916.31814027,
+    "area_crs": "EPSG:6933",
+    "candidate_area_m2": 692033130.9013495,
+    "intersections": [
+      {
+        "candidate_fraction": 0.18490528455721741,
+        "fire_id": "OR4541311664220070713",
+        "fire_name": "BATTLE CREEK COMPLEX (BATTLE CREEK)",
+        "ignition_date": "2007-07-13",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 127960582.99233612
+      },
+      {
+        "candidate_fraction": 0.166472739254905,
+        "fire_id": "OR4556011656419960802",
+        "fire_name": "SALT COMPLEX (SALT CREEK)",
+        "ignition_date": "1996-08-02",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 115204650.9562959
+      },
+      {
+        "candidate_fraction": 0.1456317769524375,
+        "fire_id": "OR4562411652120140804",
+        "fire_name": "SOMERS",
+        "ignition_date": "2014-08-04",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 100782014.56312232
+      },
+      {
+        "candidate_fraction": 0.09445065283874174,
+        "fire_id": "OR4561911679520010814",
+        "fire_name": "HORSE CREEK",
+        "ignition_date": "2001-08-14",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 65362980.999670886
+      },
+      {
+        "candidate_fraction": 0.08119627327215063,
+        "fire_id": "OR4558711675719860812",
+        "fire_name": "PUMPKIN CREEK",
+        "ignition_date": "1986-08-12",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 56190511.21004797
+      },
+      {
+        "candidate_fraction": 0.0652269043300526,
+        "fire_id": "OR4567111654620050808",
+        "fire_name": "TRYON COMPLEX (TRYON)",
+        "ignition_date": "2005-08-08",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 45139178.82252909
+      },
+      {
+        "candidate_fraction": 0.06018245652883533,
+        "fire_id": "OR4558511652920030820",
+        "fire_name": "LIGHTNING COMPLEX (TWO CORRAL)",
+        "ignition_date": "2003-08-20",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 41648253.81698428
+      },
+      {
+        "candidate_fraction": 0.04239311406542464,
+        "fire_id": "OR4547611667419890728",
+        "fire_name": "SUMMIT/STRIP",
+        "ignition_date": "1989-07-28",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 29337439.455353852
+      },
+      {
+        "candidate_fraction": 0.04181006830658225,
+        "fire_id": "OR4538911670519940828",
+        "fire_name": "POWELL COMPLEX (FREEZEOUT)",
+        "ignition_date": "1994-08-28",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 28933952.4734034
+      },
+      {
+        "candidate_fraction": 0.035685262793538376,
+        "fire_id": "OR4564611678820070713",
+        "fire_name": "GRIZZLY RIDGE",
+        "ignition_date": "2007-07-13",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 24695384.138049804
+      },
+      {
+        "candidate_fraction": 0.024598710419858397,
+        "fire_id": "OR4551311679020140825",
+        "fire_name": "UNNAMED",
+        "ignition_date": "2014-08-25",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 17023122.587990258
+      },
+      {
+        "candidate_fraction": 0.022160086506682563,
+        "fire_id": "OR4553111672120070916",
+        "fire_name": "SADDLE GULCH",
+        "ignition_date": "2007-09-16",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 15335514.046264283
+      },
+      {
+        "candidate_fraction": 0.017587478730741117,
+        "fire_id": "OR4574311663820000824",
+        "fire_name": "EASTSIDE COMPLEX (DEEP CREEK)",
+        "ignition_date": "2000-08-24",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 12171117.970695669
+      },
+      {
+        "candidate_fraction": 0.007278861269457366,
+        "fire_id": "OR4560011651620170711",
+        "fire_name": "BUCK",
+        "ignition_date": "2017-07-11",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 5037213.153699153
+      },
+      {
+        "candidate_fraction": 0.006230658712140831,
+        "fire_id": "OR4541211663119920820",
+        "fire_name": "UNNAMED",
+        "ignition_date": "1992-08-20",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 4311822.25614059
+      },
+      {
+        "candidate_fraction": 0.002001056837184589,
+        "fire_id": "OR4569411674920050808",
+        "fire_name": "TRYON COMPLEX (HAAS RIDGE)",
+        "ignition_date": "2005-08-08",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 1384797.6281484033
+      },
+      {
+        "candidate_fraction": 0.0003904404899472725,
+        "fire_id": "ID4535711661519860811",
+        "fire_name": "LITTLE GRANITE",
+        "ignition_date": "1986-08-11",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 270197.7546888679
+      },
+      {
+        "candidate_fraction": 6.896569856870082e-06,
+        "fire_id": "ID4539911656820050806",
+        "fire_name": "GRANITE COMPLEX",
+        "ignition_date": "2005-08-06",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 4772.654830529675
+      }
+    ],
+    "temporal_union_fraction": 0.0,
+    "temporal_union_intersection_m2": 0.0,
+    "temporal_window": [
+      2021,
+      2023
+    ]
+  },
+  "prealpha_parquet": "checkpoints/eligible/OR4542811673920220830.parquet",
+  "prealpha_parquet_sha256": "2b656653f5a3f0d4441af1f6156c7e2ce69d808e9669f9ace2553c8eeba96178",
+  "protocol_sha256": "14ea4b1ae082f599ac0aa6b5984acb9672a5e1d54621af627333ceffd8ac20b5",
+  "raster_class_histogram": {
+    "0": 1003152,
+    "1": 292401,
+    "2": 586128,
+    "3": 136231,
+    "4": 100546,
+    "5": 1128
+  },
+  "raster_metadata": {
+    "class_semantics": {
+      "excluded": [
+        0,
+        6,
+        "NoData"
+      ],
+      "primary_positive_classes": [
+        3,
+        4
+      ],
+      "valid_reference_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "collection": "USFS/GTAC/MTBS/annual_burn_severity_mosaics/v1",
+    "download_projection": {
+      "bounds": [
+        -116.84476732071029,
+        45.314436529068324,
+        -116.46370197718679,
+        45.71840891233687
+      ],
+      "count": 1,
+      "crs": "EPSG:4326",
+      "dtype": "uint8",
+      "height": 1499,
+      "nodata": 0.0,
+      "requested_scale_m": 30,
+      "resolution": [
+        0.00026949458523585647,
+        0.00026949458523585647
+      ],
+      "resolution_m_at_center": [
+        21.057050712686905,
+        29.952132777227042
+      ],
+      "width": 1414
+    },
+    "image_count": 1,
+    "image_index_sha256": "273e943cf1cce5a3274f47469764fcc54d48b72266ec274532081bd582bf1e0b",
+    "image_indexes": [
+      "mtbs_CONUS_2022"
+    ],
+    "native_projection": {
+      "crs": "EPSG:4326",
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "type": "Projection"
+    },
+    "year": 2022
+  },
+  "replacement_for": null,
+  "sentinel2_metadata": {
+    "annual_composite": "median",
+    "collection": "COPERNICUS/S2_SR_HARMONIZED",
+    "maximum_scene_cloud_percent": 70.0,
+    "minimum_clear_observations_each_year": 2,
+    "post_scene_count": 48,
+    "post_scene_indexes": [
+      "20230106T184751_20230106T184749_T11TNL",
+      "20230111T184729_20230111T184732_T11TNL",
+      "20230116T184721_20230116T184931_T11TNL",
+      "20230121T184659_20230121T184701_T11TNL",
+      "20230210T184519_20230210T184517_T11TNL",
+      "20230215T184441_20230215T185024_T11TNL",
+      "20230225T184341_20230225T184524_T11TNL",
+      "20230307T184221_20230307T184739_T11TNL",
+      "20230312T184149_20230312T184418_T11TNL",
+      "20230317T184111_20230317T184948_T11TNL",
+      "20230322T184039_20230322T184823_T11TNL",
+      "20230327T184001_20230327T185030_T11TNL",
+      "20230406T183921_20230406T183958_T11TNL",
+      "20230426T183921_20230426T184841_T11TNL",
+      "20230501T183919_20230501T185020_T11TNL",
+      "20230511T183919_20230511T185017_T11TNL",
+      "20230516T183921_20230516T184944_T11TNL",
+      "20230521T183929_20230521T184151_T11TNL",
+      "20230526T183921_20230526T184657_T11TNL",
+      "20230610T183929_20230610T184231_T11TNL",
+      "20230620T183919_20230620T184248_T11TNL",
+      "20230625T183921_20230625T184454_T11TNL",
+      "20230630T183929_20230630T184647_T11TNL",
+      "20230705T183921_20230705T184701_T11TNL",
+      "20230710T183929_20230710T184227_T11TNL",
+      "20230715T183921_20230715T184650_T11TNL",
+      "20230720T183929_20230720T184130_T11TNL",
+      "20230725T183921_20230725T185135_T11TNL",
+      "20230730T183929_20230730T184136_T11TNL",
+      "20230814T183921_20230814T185042_T11TNL",
+      "20230819T183929_20230819T184339_T11TNL",
+      "20230824T183921_20230824T185104_T11TNL",
+      "20230829T183929_20230829T184118_T11TNL",
+      "20230908T183919_20230908T184153_T11TNL",
+      "20230913T184001_20230913T184530_T11TNL",
+      "20230918T183939_20230918T184734_T11TNL",
+      "20230923T184111_20230923T184402_T11TNL",
+      "20230928T184049_20230928T184859_T11TNL",
+      "20231008T184249_20231008T184251_T11TNL",
+      "20231013T184321_20231013T184737_T11TNL",
+      "20231018T184359_20231018T184759_T11TNL",
+      "20231028T184459_20231028T184810_T11TNL",
+      "20231117T184649_20231117T184643_T11TNL",
+      "20231127T184719_20231127T184720_T11TNL",
+      "20231207T184749_20231207T184844_T11TNL",
+      "20231212T184801_20231212T184756_T11TNL",
+      "20231217T184809_20231217T184804_T11TNL",
+      "20231222T184801_20231222T184804_T11TNL"
+    ],
+    "post_year": 2023,
+    "pre_scene_count": 45,
+    "pre_scene_indexes": [
+      "20210111T184739_20210111T184945_T11TNL",
+      "20210116T184721_20210116T184838_T11TNL",
+      "20210126T184641_20210126T184719_T11TNL",
+      "20210131T184619_20210131T184743_T11TNL",
+      "20210210T184519_20210210T184514_T11TNL",
+      "20210302T184259_20210302T184946_T11TNL",
+      "20210312T184049_20210312T185016_T11TNL",
+      "20210317T184111_20210317T184407_T11TNL",
+      "20210327T184001_20210327T184729_T11TNL",
+      "20210401T183919_20210401T184709_T11TNL",
+      "20210406T183911_20210406T184109_T11TNL",
+      "20210411T183919_20210411T185011_T11TNL",
+      "20210416T183911_20210416T184408_T11TNL",
+      "20210421T183909_20210421T184741_T11TNL",
+      "20210426T183921_20210426T184432_T11TNL",
+      "20210506T183921_20210506T184532_T11TNL",
+      "20210511T183919_20210511T184632_T11TNL",
+      "20210516T183921_20210516T184443_T11TNL",
+      "20210531T183919_20210531T185059_T11TNL",
+      "20210605T183921_20210605T184201_T11TNL",
+      "20210615T183921_20210615T184504_T11TNL",
+      "20210620T183919_20210620T184317_T11TNL",
+      "20210625T183921_20210625T184454_T11TNL",
+      "20210630T183919_20210630T184143_T11TNL",
+      "20210705T183921_20210705T184120_T11TNL",
+      "20210710T183919_20210710T184723_T11TNL",
+      "20210715T183921_20210715T184627_T11TNL",
+      "20210725T183921_20210725T184402_T11TNL",
+      "20210730T183919_20210730T184810_T11TNL",
+      "20210804T183921_20210804T184037_T11TNL",
+      "20210809T183919_20210809T184900_T11TNL",
+      "20210814T183921_20210814T184420_T11TNL",
+      "20210819T183919_20210819T185039_T11TNL",
+      "20210824T183921_20210824T184300_T11TNL",
+      "20210829T183919_20210829T184903_T11TNL",
+      "20210903T183921_20210903T184049_T11TNL",
+      "20210908T183919_20210908T184244_T11TNL",
+      "20210913T184001_20210913T184601_T11TNL",
+      "20210923T184111_20210923T184322_T11TNL",
+      "20211003T184221_20211003T185128_T11TNL",
+      "20211018T184359_20211018T184451_T11TNL",
+      "20211107T184559_20211107T184801_T11TNL",
+      "20211117T184649_20211117T184643_T11TNL",
+      "20211122T184711_20211122T184859_T11TNL",
+      "20211217T184759_20211217T184758_T11TNL"
+    ],
+    "pre_year": 2021,
+    "scl_excluded_classes": [
+      0,
+      1,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "world_cover_collection": "ESA/WorldCover/v100"
+  },
+  "slot_primary_fire_id": "OR4542811673920220830",
+  "slot_primary_name": "DOUBLE CREEK",
+  "source_entries": [
+    {
+      "bytes": 738,
+      "kind": "arcgis_geojson",
+      "layer": 62,
+      "relative_path": "raw/mtbs/OR4542811673920220830/official_point.geojson",
+      "sha256": "b94068d47563506c97a15e86d5ab7239dd1359f5db73e8d4eb572d993afca74c",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_MTBS_01/MapServer/62/query?f=geojson&outSR=4326&returnGeometry=true&where=fire_id%3D%27OR4542811673920220830%27&outFields=%2A"
+    },
+    {
+      "bytes": 1670347,
+      "kind": "arcgis_geojson",
+      "layer": 63,
+      "relative_path": "raw/mtbs/OR4542811673920220830/official_boundary.geojson",
+      "sha256": "4ef5c3fc0dda95463f9d13e0fcfc8a01fc7db506038a5f7d60c6925ffd4b1b60",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_MTBS_01/MapServer/63/query?f=geojson&outSR=4326&returnGeometry=true&where=fire_id%3D%27OR4542811673920220830%27&outFields=%2A"
+    },
+    {
+      "bytes": 3010483,
+      "kind": "arcgis_geojson",
+      "layer": 63,
+      "relative_path": "raw/mtbs/OR4542811673920220830/intersections_0000.geojson",
+      "sha256": "b3ab84e36ddfdefc95a500f5e9fdfd78a3417806214507580af5a4b1d078523c",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_MTBS_01/MapServer/63/query?f=geojson&outSR=4326&returnGeometry=true&where=1%3D1&outFields=fire_id%2Cfire_name%2Cig_date%2Cfire_type%2Casmnt_type&geometry=%7B%22xmin%22%3A-116.84470350625787%2C%22ymin%22%3A45.314553044994184%2C%22xmax%22%3A-116.46371243229407%2C%22ymax%22%3A45.71836908468385%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelIntersects&resultOffset=0&resultRecordCount=2000&orderByFields=fire_id"
+    },
+    {
+      "bytes": 171273,
+      "collection": "USFS/GTAC/MTBS/annual_burn_severity_mosaics/v1",
+      "kind": "mtbs_severity_download",
+      "relative_path": "raw/mtbs/OR4542811673920220830/severity_download.tif",
+      "sha256": "60bc32333615f49d4aa8f4ba266757016c1ba5d493b022bf9e053bdb3e0b0a3c",
+      "url": "Earth Engine generated download URL (ephemeral; not retained)"
+    },
+    {
+      "bytes": 171273,
+      "kind": "mtbs_severity_geotiff",
+      "relative_path": "raw/mtbs/OR4542811673920220830/severity.tif",
+      "sha256": "60bc32333615f49d4aa8f4ba266757016c1ba5d493b022bf9e053bdb3e0b0a3c"
+    }
+  ],
+  "status": "ELIGIBLE_PREALPHA_FROZEN"
+}

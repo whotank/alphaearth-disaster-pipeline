@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:04,500
+Can one reusable representation describe different kinds of Earth-surface change?
+
+2
+00:00:04,500 --> 00:00:11,500
+AlphaEarth stores a 64-dimensional annual embedding for every 10-meter pixel. We compare years bracketing a hazard.
+
+3
+00:00:11,500 --> 00:00:18,500
+We square the distance between pre- and post-event embeddings, then average that generic score within H3 cells.
+
+4
+00:00:18,500 --> 00:00:28,000
+For the Woolsey Fire, AlphaEarth change follows MTBS burn severity with a within-event Spearman correlation of 0.757.
+
+5
+00:00:28,000 --> 00:00:37,500
+For the Kīlauea eruption, the same unsupervised score follows the USGS lava map with a correlation of 0.774.
+
+6
+00:00:37,500 --> 00:00:49,000
+The ten-fire cohort was frozen before AlphaEarth extraction. Nine associations were positive, with median rho 0.712.
+
+7
+00:00:49,000 --> 00:00:57,500
+But neither AlphaEarth nor TESSERA consistently beat the task-aligned optical comparator. Both confidence intervals cross zero.
+
+8
+00:00:57,500 --> 00:01:05,000
+Across eight development cases, all associations were positive, although strength varied across lava, forest loss, and drought.
+
+9
+00:01:05,000 --> 00:01:11,500
+Annual embeddings provide a portable change representation, not a replacement for specialized indices or an operational detector.

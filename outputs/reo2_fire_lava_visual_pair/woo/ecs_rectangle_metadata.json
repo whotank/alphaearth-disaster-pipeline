@@ -1,0 +1,74 @@
+{
+  "center_lat": 34.11702578055573,
+  "center_lon": -118.79939744076604,
+  "created_at_utc": "2026-08-30T03:45:34Z",
+  "data_path": "outputs/reo2_fire_lava_visual_pair/woo/alphaearth_ecs_rectangle.parquet",
+  "data_sha256": "d4e88bb677dbfc0f821fe55a8b77e8a19d9b2793335875b1f64e33fea12e7e3a",
+  "earth_engine": {
+    "batch_size": 500,
+    "collection": "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL",
+    "project_supplied_by_caller": true,
+    "scale_m": 10,
+    "tile_scale": 4
+  },
+  "event_key": "woolsey_fire_2018",
+  "fingerprint": "3114a044a571c837154e72a118bfe250e2b460f6dcaaf750a025028eb5abae25",
+  "finite_ecs_h3_count": 8574,
+  "h3_resolution": 8,
+  "h3_sha256": "77364204fd3796e9141106268ab24a076cffa3142e36c6780c56bdefc71e216e",
+  "original_h3_count": 434,
+  "original_support_render": {
+    "path": "outputs/reo2_fire_lava_visual_pair/woo/alphaearth_ecs_original_support_mask.png",
+    "sha256": "b970f49842500a303186009b1dfc2053ffe5a3e7cfea9d5c07aa63afbe64757c"
+  },
+  "payload_sha256": "5267f7992ccf1f269b4c1000a1b1a3facdd5eb862ac8710ebb6a237f0f9ab1ef",
+  "post_year": 2019,
+  "pre_year": 2017,
+  "rectangle": {
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            -118.18890312815161,
+            33.7756372097993
+          ],
+          [
+            -118.18399957462574,
+            34.45533658990149
+          ],
+          [
+            -119.41479530690626,
+            34.45533658990149
+          ],
+          [
+            -119.40989175338038,
+            33.7756372097993
+          ],
+          [
+            -118.18890312815161,
+            33.7756372097993
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "height_m": 75397.64685036827,
+    "south_north_radius_multiplier": 2.0,
+    "west_east_radius_multiplier": 3.0,
+    "width_m": 113096.4702755524
+  },
+  "rectangle_h3_count": 10408,
+  "reference_circle_radius_m": 18849.411712592067,
+  "render": {
+    "normalization": "rectangle-wide IQR z-score followed by linear min-max to [0,1]",
+    "original_circle_outline": {
+      "color": "#00E5FF",
+      "style": "dashed"
+    },
+    "path": "outputs/reo2_fire_lava_visual_pair/woo/alphaearth_ecs_mask.png",
+    "sha256": "0d8b92961c4ffe01e7f6edc9cf4fcac4821926158862a4bc97eef7c6ecb84710"
+  },
+  "schema": "fire_lava_ecs_rectangle_v1",
+  "source_kind": "heldout_mtbs_sealed",
+  "source_sha256": "305b01fd18d904677fb3b440d565b002ddd3d78373321ea87c8744af1b950c56"
+}

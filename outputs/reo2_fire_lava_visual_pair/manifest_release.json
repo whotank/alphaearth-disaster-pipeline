@@ -1,0 +1,69 @@
+{
+  "schema": "reo2_fire_lava_visual_release_v1",
+  "h3_resolution": 8,
+  "display_note": "Map colors are normalized per panel; correlations use untransformed values on matched original-support cells.",
+  "cases": [
+    {
+      "key": "kil",
+      "event": "Kilauea lava emplacement",
+      "event_year": 2018,
+      "reference": "USGS lava-emplacement footprint",
+      "primary_interval": [
+        2017,
+        2019
+      ],
+      "post_interval": [
+        2018,
+        2020
+      ],
+      "rho": 0.7740343598810172
+    },
+    {
+      "key": "rh",
+      "event": "Rhea Fire",
+      "event_year": 2018,
+      "reference": "MTBS moderate/high severity fraction",
+      "primary_interval": [
+        2017,
+        2019
+      ],
+      "post_interval": [
+        2018,
+        2020
+      ],
+      "rho": 0.6066165153043068
+    },
+    {
+      "key": "woo",
+      "event": "Woolsey Fire",
+      "event_year": 2018,
+      "reference": "MTBS moderate/high severity fraction",
+      "primary_interval": [
+        2017,
+        2019
+      ],
+      "post_interval": [
+        2018,
+        2020
+      ],
+      "rho": 0.7568721702749364
+    }
+  ],
+  "common_files": [
+    "before.png",
+    "after.png",
+    "mapped_reference_mask.png",
+    "alphaearth_ecs_original_support_mask.png",
+    "alphaearth_ecs_mask.png",
+    "alphaearth_ecs_mask_post_window_2018_2020.png",
+    "contact_sheet.png",
+    "ecs_rectangle_metadata.json",
+    "ecs_rectangle_metadata_post_window_2018_2020.json",
+    "alphaearth_ecs_rectangle.parquet",
+    "alphaearth_ecs_rectangle_post_window_2018_2020.parquet"
+  ],
+  "context_metadata_cases": [
+    "rh",
+    "woo"
+  ]
+}

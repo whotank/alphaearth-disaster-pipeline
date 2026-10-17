@@ -1,0 +1,142 @@
+{
+  "analysis": {
+    "bootstrap_replicates": 100000,
+    "bootstrap_seed": 20260817,
+    "descriptive_exact_paired_sign_randomization": true,
+    "event_endpoint": "rho_ecs_reference - max(rho_dnbr_reference, rho_dndvi_loss_reference)",
+    "independent_unit": "event",
+    "primary_statistic": "unweighted arithmetic mean of event endpoints",
+    "prohibited": [
+      "cell-level p-values",
+      "pooled-cell inference",
+      "outcome-dependent replacement",
+      "outcome-dependent metric selection"
+    ],
+    "spearman_ties": "average ranks followed by Pearson correlation of ranks"
+  },
+  "alphaearth": {
+    "bands": "A00-A63",
+    "batch_size_h3": 40,
+    "collection": "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL",
+    "ecs_pixel": "sum((post_axis-pre_axis)^2 for A00-A63)",
+    "ee_project": "project0-256023",
+    "h3_reducer": "unweighted mean of valid 10 m pixels",
+    "max_batch_retries": 3,
+    "pre_year": "ignition year minus 1, full calendar year",
+    "post_year": "ignition year plus 1, full calendar year",
+    "scale_m": 10
+  },
+  "artifact_policy": {
+    "compact_outputs_only": true,
+    "exclude_absolute_identifying_paths": true,
+    "ignored_local_only": [
+      "raw archives and rasters",
+      "checkpoints",
+      "sealed per-cell Parquet files",
+      "scratch data"
+    ],
+    "no_secrets": true
+  },
+  "base_commit": "2a6fb2933f535d6372d7bd1d7eb5158be7d2345f",
+  "freeze_sha256": "eb204cfc9d4a16d9c27db4d7641c4ebf3e6fc98ae637ed71a9a7c50a4a32794e",
+  "h3_population": {
+    "cap": 2000,
+    "cap_order": "ascending SHA256(alphaearth-mtbs-common-h3-v1|FIRE_ID|H3), then H3",
+    "center_rule": "H3 resolution 8 cell center is covered by the official MTBS boundary",
+    "final_population": "intersection of MTBS-reference-supported and Sentinel-2-supported cells, frozen before AlphaEarth pixel extraction",
+    "minimum": 200,
+    "resolution": 8
+  },
+  "land_cover_audit": {
+    "eligibility_effect": "none; P06 mismatch is reported only",
+    "source": "ESA/WorldCover/v100 Map, 2020",
+    "support": "exact final H3 population",
+    "summary": "area-weighted class fractions and dominant class"
+  },
+  "mtbs_reference": {
+    "boundary_source": "USFS EDW MTBS Burned Area Boundaries (All Years), ArcGIS layer 63",
+    "positive_classes": [
+      3,
+      4
+    ],
+    "reference_per_h3": "count(classes 3 or 4) / count(classes 1 through 5)",
+    "severity_source": "USFS/GTAC/MTBS/annual_burn_severity_mosaics/v1 Severity, official annual mosaic clipped to official event boundary",
+    "spatial_reducer": "30 m raster pixel-center counts inside each H3 polygon",
+    "support_classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "support_threshold": 0.8,
+    "unsupported": [
+      0,
+      6,
+      "NoData"
+    ]
+  },
+  "overlap_audit": {
+    "area_crs": "EPSG:6933",
+    "failure_rule": "unioned intersection with other MTBS boundaries ignited in Y-1 through Y+1 exceeds 5% of candidate boundary area",
+    "record_all_time_reburn": true,
+    "source": "USFS EDW MTBS Burned Area Boundaries (All Years), ArcGIS layer 63"
+  },
+  "p_gates": {
+    "P01": "official boundary, thematic raster, mask, and metadata exist and parse",
+    "P02": "exact temporal-window boundary overlap is at most 5% and event is isolable",
+    "P03": "final frozen common population has at least 200 H3-r8 cells",
+    "P04": "official FIRE_ID, dates, pre/post source IDs, map ID, CRS, and product metadata match the canonical freeze",
+    "P05": "reference and pre-AlphaEarth optical variables are finite and nonconstant on the frozen population",
+    "P06": "dominant land-cover audit, reported without eligibility effect"
+  },
+  "replacement": {
+    "allowed_failures": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05"
+    ],
+    "consume_reserves": "strict canonical rank order globally",
+    "preserve_failed_attempts": true,
+    "prohibited_reasons": [
+      "severity magnitude",
+      "visual clarity",
+      "correlation",
+      "ECS",
+      "model outcome",
+      "effect sign"
+    ]
+  },
+  "schema": "alphaearth_mtbs_heldout_protocol_v1",
+  "sealing": {
+    "analysis_precondition": "all ten final events have complete sealed feature files whose SHA-256 values match the sealed manifest",
+    "partial_correlations_prohibited": true,
+    "per_event_feature_files": "written without correlation or endpoint fields"
+  },
+  "sentinel2": {
+    "annual_composite": "per-band median of all retained scenes",
+    "cell_valid_fraction_minimum": 0.5,
+    "collection": "COPERNICUS/S2_SR_HARMONIZED",
+    "dndvi_loss": "NDVIpre-NDVIpost",
+    "dnbr": "NBRpre-NBRpost",
+    "full_calendar_years": "Y-1 and Y+1",
+    "h3_reducer": "unweighted mean of valid pixels",
+    "index_denominator_absolute_minimum": 1e-06,
+    "maximum_scene_cloud_percent": 70,
+    "minimum_clear_observations_each_year": 2,
+    "reflectance_scale": 0.0001,
+    "scale_m": 10,
+    "scl_excluded_classes": [
+      0,
+      1,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  }
+}

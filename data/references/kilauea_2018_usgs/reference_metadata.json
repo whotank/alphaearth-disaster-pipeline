@@ -1,0 +1,27 @@
+{
+  "source_title": "Kilauea 2018 lower East Rift Zone eruption lava flow footprint",
+  "source_id": "USGS DOI 10.5066/P9S7UQKQ",
+  "source_url": "https://www.sciencebase.gov/catalog/item/5ebb4b7282ce25b5136182a9",
+  "observation_start": "2018",
+  "observation_end": "2018",
+  "license": "Access constraints: none; USGS acknowledgement requested; intended mapping scale 1:5,000 with approximately 10 m ground resolution.",
+  "reference_semantics": "Binary affected-area footprint. Outside the polygon is a valid negative only within the configured analysis AOI.",
+  "prepared_utc": "2026-08-15T23:41:23.137734+00:00",
+  "input_path": "data/references/kilauea_2018_usgs/source/KIL_2018_LERZ_FlowFootprint/KIL_2018_LERZ_FlowFootprint.shp",
+  "input_sha256": "98b691516c1b055682214b056d911f5dd48362627fc5c05f2fd29ac5db39d2af",
+  "output_geojson": "data/references/kilauea_2018_usgs/lava_flow_footprint.geojson",
+  "output_sha256": "aae237ccff7d1aac95bbe1475565f17cb26b9b07e132c210cbc609a7567ab2e6",
+  "source_feature_count": 9,
+  "polygon_feature_count": 9,
+  "source_crs": "EPSG:26905",
+  "output_crs": "EPSG:4326",
+  "output_bounds_wgs84": [
+    -154.92657405890427,
+    19.440661380349248,
+    -154.80698599991325,
+    19.51342722237034
+  ],
+  "affected_area_km2": 35.65058397046506,
+  "source_archive": "data/references/kilauea_2018_usgs/source.zip",
+  "source_archive_sha256": "41251903feb380d4ad83acd7cdd39172b05c79ac62bd08fa1e25941f7f7dccd6"
+}

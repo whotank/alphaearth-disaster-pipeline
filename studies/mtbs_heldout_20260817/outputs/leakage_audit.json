@@ -1,0 +1,23 @@
+{
+  "audit_schema": "alphaearth_mtbs_leakage_audit_v1",
+  "checked_candidate_count": 20,
+  "exact_fire_id_matches_outside_study": {},
+  "forbidden_module_imports": [],
+  "frozen_repository_check": {
+    "excluded": [
+      "bootleg_fire_2021",
+      "caldor_fire_2021",
+      "camp_fire_2018",
+      "dixie_fire_2021",
+      "fort_mcmurray_fire_2016",
+      "marshall_fire_2021",
+      "mosquito_fire_2022",
+      "quebec_fires_2023",
+      "thomas_fire_2017",
+      "tubbs_fire_2017"
+    ],
+    "selected_fire_id_overlap": [],
+    "verified": true
+  },
+  "passed": true
+}

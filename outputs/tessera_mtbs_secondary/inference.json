@@ -1,0 +1,36 @@
+{
+  "cohort_inference_permitted": true,
+  "descriptive_alphaearth_tessera": {
+    "bootstrap": {
+      "confidence_level": 0.95,
+      "lower": -0.13796961846622843,
+      "method": "nonparametric percentile event bootstrap",
+      "replicates": 100000,
+      "seed": 20260817,
+      "upper": 0.05881812102090998
+    },
+    "event_statistic": "A_e=rho_AlphaEarth-rho_TESSERA",
+    "label": "descriptive only; no model-ranking claim",
+    "unweighted_mean_a_e": -0.034435058026204474
+  },
+  "evaluable_event_count": 9,
+  "minimum_events_required": 8,
+  "planned_event_count": 10,
+  "secondary_endpoint": {
+    "bootstrap": {
+      "confidence_level": 0.95,
+      "lower": -0.3154114879540012,
+      "method": "nonparametric percentile event bootstrap",
+      "replicates": 100000,
+      "seed": 20260817,
+      "upper": 0.09448692119672926
+    },
+    "event_statistic": "S_e=rho_TESSERA-max(rho_dNBR,rho_dNDVI_loss)",
+    "multiplicity_label": "one prespecified secondary endpoint",
+    "negative_event_count": 6,
+    "positive_event_count": 3,
+    "unweighted_mean_s_e": -0.09196250427991957,
+    "zero_event_count": 0
+  },
+  "unit": "event"
+}

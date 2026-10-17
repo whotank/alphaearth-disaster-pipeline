@@ -1,0 +1,268 @@
+{
+  "absolute_identifying_paths_included": false,
+  "entries": [
+    {
+      "bytes": 1797,
+      "path": "studies/mtbs_heldout_20260817/README.md",
+      "sha256": "edd619c8d2f12e70056217af495b5f3b63b3af4b14a23cd97553a2980977a043"
+    },
+    {
+      "bytes": 19875,
+      "path": "studies/mtbs_heldout_20260817/analysis_stage.py",
+      "sha256": "c39ca76d1fbc5c2e7bc91bc2d08ea2e484a7788a9a776d9ef90f3773b48f3db0"
+    },
+    {
+      "bytes": 11396,
+      "path": "studies/mtbs_heldout_20260817/features_stage.py",
+      "sha256": "fad9642a985d1bfac7825ce8721e68efd2ef51e2ee3e6172dc46c2f30f93fbbc"
+    },
+    {
+      "bytes": 19088,
+      "path": "studies/mtbs_heldout_20260817/freeze/canonical.json",
+      "sha256": "eb204cfc9d4a16d9c27db4d7641c4ebf3e6fc98ae637ed71a9a7c50a4a32794e"
+    },
+    {
+      "bytes": 522,
+      "path": "studies/mtbs_heldout_20260817/freeze/freeze_audit.json",
+      "sha256": "65c3c9ff7e97f89d21217ccc6b53f571a1c4feb78ccab058e757dd003c3ff667"
+    },
+    {
+      "bytes": 45266,
+      "path": "studies/mtbs_heldout_20260817/outputs/analysis/figures/event_bootstrap.png",
+      "sha256": "1a821008c634a3aa77d06ca629934ffd5ee70b1f864bf20984107907a32393c2"
+    },
+    {
+      "bytes": 85154,
+      "path": "studies/mtbs_heldout_20260817/outputs/analysis/figures/event_endpoints.png",
+      "sha256": "8e5ef87c7c3954c256ac299dfcc84b8f552b7b9d6a2cda3df4ea4c3f356921d8"
+    },
+    {
+      "bytes": 2170,
+      "path": "studies/mtbs_heldout_20260817/outputs/analysis/methodology_report.md",
+      "sha256": "db65381e9321c51125e2b6f42620212c67c56bafa1e800ce9d85171a2d63312b"
+    },
+    {
+      "bytes": 2772,
+      "path": "studies/mtbs_heldout_20260817/outputs/analysis/per_event_metrics.csv",
+      "sha256": "cfbb95a1860d7118e529ddd4a00f3d7d0b8f290723500077cde4fece76d0c90c"
+    },
+    {
+      "bytes": 6207,
+      "path": "studies/mtbs_heldout_20260817/outputs/analysis/per_event_metrics.json",
+      "sha256": "d8255818c37185934c10fb7e568daa0e0cad01f6bd2bdaba6a86e8f679194450"
+    },
+    {
+      "bytes": 1029,
+      "path": "studies/mtbs_heldout_20260817/outputs/analysis/primary_inference.json",
+      "sha256": "a37e5c17140d1878fb0f9f2b30dff8eff663d6b5f7ddaef73a65c2cbff7882d8"
+    },
+    {
+      "bytes": 2924,
+      "path": "studies/mtbs_heldout_20260817/outputs/analysis/secondary_sensitivities.csv",
+      "sha256": "cdc68b8d86968da30cfd60453befbbe3b482ffdaf80cfbca02b2ef540a4f85b0"
+    },
+    {
+      "bytes": 450,
+      "path": "studies/mtbs_heldout_20260817/outputs/analysis/secondary_sensitivities.json",
+      "sha256": "6294230856d49001c884754e992979224203acdd9d8ff3d42ebed5877fb7454e"
+    },
+    {
+      "bytes": 566,
+      "path": "studies/mtbs_heldout_20260817/outputs/analysis_artifacts.json",
+      "sha256": "9f37555e46b52bfabb03cb786d637b7a9b37de4d3de475d5174fb1cc438b484a"
+    },
+    {
+      "bytes": 2685,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempted_ledger.csv",
+      "sha256": "5ae924bf784de7cbb8cfa2c75ff3b1a35faf07c20cd7c02d41c4ddec5971575c"
+    },
+    {
+      "bytes": 290273,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempted_ledger.json",
+      "sha256": "0ab9b82daecf7dfea006c8f43dc83fe31d0b5d718139a0c56873d151a5cede36"
+    },
+    {
+      "bytes": 29603,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/AK6660614659920190622.json",
+      "sha256": "dec800b23e8f8a698002124d1b1f7b50beb10e2b7374e357bf0fe5fb644bd11a"
+    },
+    {
+      "bytes": 30807,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/CA3424011870020181108.json",
+      "sha256": "96b3d874b4a46c407c5238ba5064cb3151ffc92b496faac204c6713bade9f9db"
+    },
+    {
+      "bytes": 18114,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/CA3528611528620230728.json",
+      "sha256": "598bc72aabd2dd65e808e5e459e95922c5871f78420f31806f982ca8f7e1dfd8"
+    },
+    {
+      "bytes": 23745,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/CA4005312066920190904.json",
+      "sha256": "aedccb4c29819246fe71fc04a54195e2359d4e55679406f0fce95edc1b12172d"
+    },
+    {
+      "bytes": 31816,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/ID4601211691120210707.json",
+      "sha256": "1bcd0f8cbc20cefa2f06eb499076f160042b2d88fc160b95e3ffe8a0301ff712"
+    },
+    {
+      "bytes": 5536,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/KS3910009890020211215.json",
+      "sha256": "2b707226cfc617c72c8c0fd905f98529873987602bf9f346c26577cc8b1b6894"
+    },
+    {
+      "bytes": 24873,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/MT4571710705620200902.json",
+      "sha256": "86613014a53dd260028b9c3c3b91871fbbe867fa805f61de8dc75ceb63e27d6a"
+    },
+    {
+      "bytes": 41953,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/NM3320410805920220514.json",
+      "sha256": "694805651974e8888fdde421ce5ee94eb9f3b7e512ba4bf090ce258f0e7ed8fa"
+    },
+    {
+      "bytes": 27432,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/OK3585009921020180412.json",
+      "sha256": "cf7c494ffea33dcbb7d4a04330bdec5cce07998f2156f21c332cf474c2470505"
+    },
+    {
+      "bytes": 13900,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/OR4482112218820200816.json",
+      "sha256": "69e6181285748f3ea90c16617a8a8f0d966828e217d714fbef7246c3f3e0c473"
+    },
+    {
+      "bytes": 16377,
+      "path": "studies/mtbs_heldout_20260817/outputs/attempts/OR4542811673920220830.json",
+      "sha256": "be2348bb4f2a8407e1b3b01122755fabd04700230f92c4838a9f9b35f616d50e"
+    },
+    {
+      "bytes": 2214,
+      "path": "studies/mtbs_heldout_20260817/outputs/feature_extraction/AK6660614659920190622.json",
+      "sha256": "188ff92ad8c549ffd90e9b8c342687865c1dd2092c9ed8fb73f5f55922020ad1"
+    },
+    {
+      "bytes": 2388,
+      "path": "studies/mtbs_heldout_20260817/outputs/feature_extraction/CA3424011870020181108.json",
+      "sha256": "13b03ccb3e2709b6a86643b87c2917f0f9af8693fb14d96b8a5a88450190a3a0"
+    },
+    {
+      "bytes": 2272,
+      "path": "studies/mtbs_heldout_20260817/outputs/feature_extraction/CA3528611528620230728.json",
+      "sha256": "ead7f43225d17a901e366259f464c52749183e9de99ed604483d14319b1968e9"
+    },
+    {
+      "bytes": 2214,
+      "path": "studies/mtbs_heldout_20260817/outputs/feature_extraction/CA4005312066920190904.json",
+      "sha256": "ee3a611ad335e1b19fd0326569f140a23dff9386ebceeeee2f1f77e7bf29a13f"
+    },
+    {
+      "bytes": 2272,
+      "path": "studies/mtbs_heldout_20260817/outputs/feature_extraction/ID4601211691120210707.json",
+      "sha256": "0070518d179650eda8651c6a193680eb3990b66decc041349afd82dbd421d88f"
+    },
+    {
+      "bytes": 2272,
+      "path": "studies/mtbs_heldout_20260817/outputs/feature_extraction/MT4571710705620200902.json",
+      "sha256": "2e6ed83f0922826d2266f4a3054511d44bc0a563b5fc24fbbabaa099a87460c1"
+    },
+    {
+      "bytes": 2273,
+      "path": "studies/mtbs_heldout_20260817/outputs/feature_extraction/NM3320410805920220514.json",
+      "sha256": "479859f35a34a4fedc73c2c86b406b789c1377ec8ac6fe0a0a8a4563a301e28c"
+    },
+    {
+      "bytes": 2273,
+      "path": "studies/mtbs_heldout_20260817/outputs/feature_extraction/OK3585009921020180412.json",
+      "sha256": "c4d62e5299e7431faae52a36c3fa51ecc73931bb713cbb86fa96bdce4d969041"
+    },
+    {
+      "bytes": 2215,
+      "path": "studies/mtbs_heldout_20260817/outputs/feature_extraction/OR4482112218820200816.json",
+      "sha256": "79e0f21d88adab269d9d4edf8ae49506af8de566325d7fc9eac45e5d89279106"
+    },
+    {
+      "bytes": 2214,
+      "path": "studies/mtbs_heldout_20260817/outputs/feature_extraction/OR4542811673920220830.json",
+      "sha256": "e7eb1585243861023ea7eb4e9a45216e92792b2930209574fc269419cb3a9602"
+    },
+    {
+      "bytes": 17962,
+      "path": "studies/mtbs_heldout_20260817/outputs/final_cohort.json",
+      "sha256": "ca95eb2f903f65ba856ab41f8341f3b9fe12ee7dbc003a94f2daf1c1e4756777"
+    },
+    {
+      "bytes": 573,
+      "path": "studies/mtbs_heldout_20260817/outputs/leakage_audit.json",
+      "sha256": "74feab9084ca8b22eafb05045bbaab8a770220f2a066ae7834b24a6a16f6c8ef"
+    },
+    {
+      "bytes": 203961,
+      "path": "studies/mtbs_heldout_20260817/outputs/population_freeze.json",
+      "sha256": "740b1186e893189606411ada3f0c7c59dc8e97ff5c54ed661ca5d714947a2c7c"
+    },
+    {
+      "bytes": 224,
+      "path": "studies/mtbs_heldout_20260817/outputs/population_freeze_audit.json",
+      "sha256": "b972baa6722eb6bb637080eb6af959d39d501f3848b4cfb81da24de0ee11cdd7"
+    },
+    {
+      "bytes": 1405,
+      "path": "studies/mtbs_heldout_20260817/outputs/progress_state.json",
+      "sha256": "ed33af28bf9216549b931dcbb7182f56048f7e0557b5bebc50a7ae250dac9b70"
+    },
+    {
+      "bytes": 3525,
+      "path": "studies/mtbs_heldout_20260817/outputs/runner_incidents.json",
+      "sha256": "40c7c28d976fd928619c49791e1f498c452556d2d1ef20282f024a0d620e3935"
+    },
+    {
+      "bytes": 1139,
+      "path": "studies/mtbs_heldout_20260817/outputs/runtime_manifest.json",
+      "sha256": "11044dca73b75959b7997bcafd54caf2ffd319c5f5f1e7f104e0bd59b23a3a44"
+    },
+    {
+      "bytes": 4642,
+      "path": "studies/mtbs_heldout_20260817/outputs/sealed_manifest.json",
+      "sha256": "9a7451582831e87d812268db04791718f21d9366a041c205d4a5b132d905b19a"
+    },
+    {
+      "bytes": 44787,
+      "path": "studies/mtbs_heldout_20260817/outputs/source_manifest.json",
+      "sha256": "9451559f67a69ac5a5c78328f21bd7225e562c0d8373540c46ccf6202b2a4321"
+    },
+    {
+      "bytes": 5011,
+      "path": "studies/mtbs_heldout_20260817/protocol.json",
+      "sha256": "14ea4b1ae082f599ac0aa6b5984acb9672a5e1d54621af627333ceffd8ac20b5"
+    },
+    {
+      "bytes": 24196,
+      "path": "studies/mtbs_heldout_20260817/reference_stage.py",
+      "sha256": "daa11380e69b660c1e2a88391c5cd2b12a5dc2d544cd067c5512f7ec1924dca2"
+    },
+    {
+      "bytes": 6171,
+      "path": "studies/mtbs_heldout_20260817/run_study.py",
+      "sha256": "f11dc2250ac5c1fe7ec8e3a59e6e17814461c2bb0ed3de28f7efb1916872d8fc"
+    },
+    {
+      "bytes": 17675,
+      "path": "studies/mtbs_heldout_20260817/study_core.py",
+      "sha256": "7e862e0a619af299b171f421d5c5cbb6f64a05f633236be70a41f3a028d93b53"
+    },
+    {
+      "bytes": 19749,
+      "path": "studies/mtbs_heldout_20260817/study_sources.py",
+      "sha256": "203c4bd51c5ac0600c95417d37cb0cdaefe75936b4004e0ef6e0bef337bd8f2f"
+    },
+    {
+      "bytes": 9323,
+      "path": "tests/test_mtbs_heldout_study.py",
+      "sha256": "91a291ef9c6c2543cc9698ccdbee4a32df524bd27b2877adfa437aeaca069bc2"
+    }
+  ],
+  "raw_or_large_data_included": false,
+  "schema": "alphaearth_mtbs_compact_artifact_manifest_v1",
+  "secrets_included": false
+}

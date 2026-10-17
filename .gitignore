@@ -1,0 +1,37 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+.mplconfig/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service-account*.json
+*.bundle
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+paper/preview/
+
+# Regenerable downloads and checkpoints
+data/references/usdm/raw/
+**/cache/
+**/checkpoints/
+**/*_checkpoints/
+outputs/mtbs_delta64_loeo_v1/

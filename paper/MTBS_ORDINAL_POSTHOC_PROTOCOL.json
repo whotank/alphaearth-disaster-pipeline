@@ -1,0 +1,95 @@
+{
+  "schema": "mtbs_ordinal_posthoc_protocol_v1",
+  "created_at": "2026-08-18T22:44:00-04:00",
+  "status": "post_hoc_secondary",
+  "trigger": "Defined after inspecting the frozen York result and its MTBS class composition.",
+  "claim_boundary": "This study cannot replace, rescue, or modify the frozen moderate/high primary endpoint.",
+  "source_study": {
+    "canonical_protocol_sha256": "eb204cfc9d4a16d9c27db4d7641c4ebf3e6fc98ae637ed71a9a7c50a4a32794e",
+    "population_freeze_sha256": "740b1186e893189606411ada3f0c7c59dc8e97ff5c54ed661ca5d714947a2c7c",
+    "events": 10,
+    "h3_resolution": 8,
+    "population_rule": "Use each event's immutable frozen H3 list and sealed AlphaEarth/Sentinel-2 feature file. Do not replace events or select cells based on new outcomes."
+  },
+  "mtbs_classes": {
+    "0": "background, excluded",
+    "1": "unburned to low",
+    "2": "low",
+    "3": "moderate",
+    "4": "high",
+    "5": "increased greenness, not ordinal",
+    "6": "non-mapping area, excluded",
+    "nodata": "excluded"
+  },
+  "targets": [
+    {
+      "id": "primary_mod_high",
+      "role": "frozen_primary_replay",
+      "formula": "(n3 + n4) / (n1 + n2 + n3 + n4 + n5)"
+    },
+    {
+      "id": "ordinal_mean_1_4",
+      "role": "post_hoc_primary_diagnostic",
+      "formula": "(0*n1 + (1/3)*n2 + (2/3)*n3 + 1*n4) / (n1 + n2 + n3 + n4)",
+      "class_5_rule": "Exclude increased-greenness pixels because class 5 is not ordered above class 4."
+    },
+    {
+      "id": "any_severity_2_4",
+      "role": "post_hoc_cumulative_diagnostic",
+      "formula": "(n2 + n3 + n4) / (n1 + n2 + n3 + n4)"
+    },
+    {
+      "id": "moderate_high_3_4",
+      "role": "post_hoc_cumulative_diagnostic",
+      "formula": "(n3 + n4) / (n1 + n2 + n3 + n4)"
+    },
+    {
+      "id": "high_only_4",
+      "role": "post_hoc_cumulative_diagnostic",
+      "formula": "n4 / (n1 + n2 + n3 + n4)"
+    }
+  ],
+  "class_5_sensitivity": {
+    "id": "ordinal_mean_green_zero",
+    "formula": "(0*n1 + (1/3)*n2 + (2/3)*n3 + 1*n4 + 0*n5) / (n1 + n2 + n3 + n4 + n5)",
+    "interpretation": "Sensitivity only. A zero weight does not imply that increased greenness is equivalent to no fire effect."
+  },
+  "within_event_analysis": {
+    "association": "Spearman rank correlation",
+    "features": [
+      "AlphaEarth ECS",
+      "signed Sentinel-2 dNBR",
+      "signed Sentinel-2 dNDVI loss"
+    ],
+    "optical_oracle": "For each target and event, take the larger of the matched dNBR and dNDVI Spearman correlations.",
+    "contrast": "D_e(target) = rho_ECS(target) - max(rho_dNBR(target), rho_dNDVI(target))",
+    "missing_target_rule": "Report every frozen cell with zero class-1-through-4 denominator. Correlations use finite target-feature pairs; no event is replaced. Any event with fewer than 200 finite cells is reported as unavailable for that target."
+  },
+  "event_level_analysis": {
+    "unit": "event",
+    "weighting": "unweighted",
+    "summaries": [
+      "median embedding correlation",
+      "range of embedding correlations",
+      "mean D_e",
+      "median D_e",
+      "positive and negative D_e counts"
+    ],
+    "bootstrap": {
+      "resamples": 100000,
+      "seed": 20260818,
+      "interval": "95% percentile event bootstrap"
+    }
+  },
+  "tessera_secondary": {
+    "rule": "If the prespecified TESSERA feature files are locally available, recompute the same targets and contrasts on the same nine evaluable frozen populations. Preserve the documented missing event."
+  },
+  "reporting": {
+    "report_all_targets": true,
+    "report_all_events": true,
+    "prohibit_target_selection_by_result": true,
+    "prohibit_primary_endpoint_replacement": true,
+    "confirmatory_p_values": false,
+    "manuscript_role": "Exploratory supplement or future-study motivation only."
+  }
+}

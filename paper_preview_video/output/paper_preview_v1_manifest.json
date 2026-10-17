@@ -1,0 +1,145 @@
+{
+  "artifacts": {
+    "captions": "paper_preview_video/output/paper_preview_v1.srt",
+    "poster": "paper_preview_video/output/paper_preview_v1_poster.jpg",
+    "storyboard": "paper_preview_video/output/paper_preview_v1_storyboard.jpg"
+  },
+  "created_at_utc": "2026-10-17T06:43:35Z",
+  "rendering": {
+    "encoder": "ffmpeg-macos-aarch64-v7.1",
+    "generated_imagery": false,
+    "source_imagery": "existing project imagery and mapped-reference artifacts"
+  },
+  "scenes": [
+    {
+      "caption": "Can one reusable representation describe different kinds of Earth-surface change?",
+      "duration_s": 4.5,
+      "key": "title"
+    },
+    {
+      "caption": "AlphaEarth stores a 64-dimensional annual embedding for every 10-meter pixel. We compare years bracketing a hazard.",
+      "duration_s": 7.0,
+      "key": "annual-question"
+    },
+    {
+      "caption": "We square the distance between pre- and post-event embeddings, then average that generic score within H3 cells.",
+      "duration_s": 7.0,
+      "key": "method"
+    },
+    {
+      "caption": "For the Woolsey Fire, AlphaEarth change follows MTBS burn severity with a within-event Spearman correlation of 0.757.",
+      "duration_s": 9.5,
+      "key": "woolsey"
+    },
+    {
+      "caption": "For the K\u012blauea eruption, the same unsupervised score follows the USGS lava map with a correlation of 0.774.",
+      "duration_s": 9.5,
+      "key": "kilauea"
+    },
+    {
+      "caption": "The ten-fire cohort was frozen before AlphaEarth extraction. Nine associations were positive, with median rho 0.712.",
+      "duration_s": 11.5,
+      "key": "heldout-cohort"
+    },
+    {
+      "caption": "But neither AlphaEarth nor TESSERA consistently beat the task-aligned optical comparator. Both confidence intervals cross zero.",
+      "duration_s": 8.5,
+      "key": "incremental-value"
+    },
+    {
+      "caption": "Across eight development cases, all associations were positive, although strength varied across lava, forest loss, and drought.",
+      "duration_s": 7.5,
+      "key": "development-audit"
+    },
+    {
+      "caption": "Annual embeddings provide a portable change representation, not a replacement for specialized indices or an operational detector.",
+      "duration_s": 6.5,
+      "key": "takeaway"
+    }
+  ],
+  "schema": "reo2_paper_preview_render_v1",
+  "sources": [
+    {
+      "bytes": 1838,
+      "path": "artifacts/release_summary.json",
+      "sha256": "547dbc33bc30c703210522357604c157d262d363483a86bfbd353e242d8a0376"
+    },
+    {
+      "bytes": 612188,
+      "path": "outputs/reo2_fire_lava_visual_pair/kil/after.png",
+      "sha256": "d873d47f1da8d1c454e1ffbfce7d51c9a1bb0f5e45711f1ffc64d250c64c81ca"
+    },
+    {
+      "bytes": 400613,
+      "path": "outputs/reo2_fire_lava_visual_pair/kil/alphaearth_ecs_original_support_mask.png",
+      "sha256": "e0ec115d5180af1353fab41090248b59809baa05aa2c787161dc09011d2ed33d"
+    },
+    {
+      "bytes": 459702,
+      "path": "outputs/reo2_fire_lava_visual_pair/kil/before.png",
+      "sha256": "cd528d8a1785408af5707961feccd0dc8e73fe55ac5cf7c01360cf45e996fb28"
+    },
+    {
+      "bytes": 388602,
+      "path": "outputs/reo2_fire_lava_visual_pair/kil/mapped_reference_mask.png",
+      "sha256": "3b965e1c782c67e31058b15587c5f117980564f457e576e904f3ffa8e74d2fa0"
+    },
+    {
+      "bytes": 1640,
+      "path": "outputs/reo2_fire_lava_visual_pair/manifest_release.json",
+      "sha256": "3779b0a339384b38be8ec2cd1dd04292b702db802599c0f8688903a34619838e"
+    },
+    {
+      "bytes": 2600958,
+      "path": "outputs/reo2_fire_lava_visual_pair/woo/after.png",
+      "sha256": "b12c76fac4726f7a325a733fe1e95dea0d547abc1540803ff7262a38db6b56f3"
+    },
+    {
+      "bytes": 461859,
+      "path": "outputs/reo2_fire_lava_visual_pair/woo/alphaearth_ecs_original_support_mask.png",
+      "sha256": "b970f49842500a303186009b1dfc2053ffe5a3e7cfea9d5c07aa63afbe64757c"
+    },
+    {
+      "bytes": 2574993,
+      "path": "outputs/reo2_fire_lava_visual_pair/woo/before.png",
+      "sha256": "8d3dfef022100299d61daa9aa5702f28a5d589ece29656a6f6c2b8ea3e5b3b8b"
+    },
+    {
+      "bytes": 460713,
+      "path": "outputs/reo2_fire_lava_visual_pair/woo/mapped_reference_mask.png",
+      "sha256": "53e5e9f352ece2a7fcf5b4191a4f31b1a435b710cd816ea66561bbedd0cb0b8e"
+    },
+    {
+      "bytes": 917,
+      "path": "paper/reo2_primary_figure_data.csv",
+      "sha256": "9050a5743de4ed7f1360394a15d7cabec868eee6c5e0ba9452c9ba7b10d309bc"
+    },
+    {
+      "bytes": 48608,
+      "path": "paper_preview_video/build_preview_video.py",
+      "sha256": "612ac63dc30aab240b6ebcd6a20ff1caa5ac641e974fd8f5d20b60ad66a38e4f"
+    },
+    {
+      "bytes": 2819,
+      "path": "paper_preview_video/preview_data.json",
+      "sha256": "25bec6e2ca1882e30875d582b9693f169d06813006ead121bfc1d180d2468ea5"
+    },
+    {
+      "bytes": 28,
+      "path": "paper_preview_video/requirements.txt",
+      "sha256": "b1c26831b0f436b1477b7f9d468ac868e5fc2162cc9e5deae36d345a8364c990"
+    }
+  ],
+  "video": {
+    "audio": false,
+    "bytes": 7797774,
+    "codec": "H.264",
+    "duration_s": 71.5,
+    "fps": 30,
+    "frame_count": 2145,
+    "height": 1080,
+    "path": "paper_preview_video/output/paper_preview_v1.mp4",
+    "sha256": "e89ffcaaa76ff00ad68d1d33640bdcf9d80105f7a50a5ee094f15d3d471b4991",
+    "width": 1920
+  }
+}

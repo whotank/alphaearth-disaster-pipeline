@@ -1,0 +1,108 @@
+{
+  "all_events_complete": true,
+  "correlations_computed": false,
+  "events": [
+    {
+      "fire_id": "OK3585009921020180412",
+      "h3_sha256": "437a49a994d660aed1652951814d91d159867c54c740e15765114cadafb33ce9",
+      "metadata_file": "outputs/feature_extraction/OK3585009921020180412.json",
+      "name": "RHEA",
+      "rows": 1240,
+      "sealed_file": "sealed/OK3585009921020180412.parquet",
+      "sealed_sha256": "ca89289a6e6df28c8c9393a586dfbd00000420495af214aae167e9f9c6969bf5",
+      "slot_rank": 1
+    },
+    {
+      "fire_id": "CA3424011870020181108",
+      "h3_sha256": "4b3f1b84a072246b698f556d825225febc426f83dc9316cc81aaf766db1bf16d",
+      "metadata_file": "outputs/feature_extraction/CA3424011870020181108.json",
+      "name": "WOOLSEY",
+      "rows": 434,
+      "sealed_file": "sealed/CA3424011870020181108.parquet",
+      "sealed_sha256": "305b01fd18d904677fb3b440d565b002ddd3d78373321ea87c8744af1b950c56",
+      "slot_rank": 2
+    },
+    {
+      "fire_id": "AK6660614659920190622",
+      "h3_sha256": "b9a2beeffebc6133b1b6ad2184b8b1334abc4ee8f4e00d35344f0522671ec81d",
+      "metadata_file": "outputs/feature_extraction/AK6660614659920190622.json",
+      "name": "HADWEENZIC RIVER",
+      "rows": 260,
+      "sealed_file": "sealed/AK6660614659920190622.parquet",
+      "sealed_sha256": "016ac4a78463730075b52ac5d36b44492428c36f9cb549b09da970b2e2423af7",
+      "slot_rank": 3
+    },
+    {
+      "fire_id": "OR4482112218820200816",
+      "h3_sha256": "72675fd80424259eee33e150f59fa8245dd9f92400ad10b97950750312684f9c",
+      "metadata_file": "outputs/feature_extraction/OR4482112218820200816.json",
+      "name": "BEACHIE CREEK",
+      "rows": 1046,
+      "sealed_file": "sealed/OR4482112218820200816.parquet",
+      "sealed_sha256": "927bf0e42116f3604a59a5fe97e4a03c5fb64a0cb7f9b002a392772e290cf776",
+      "slot_rank": 4
+    },
+    {
+      "fire_id": "MT4571710705620200902",
+      "h3_sha256": "d544517dd163bc45254ed17f50603b4275e0582a41550c29c63deefbc470a3bd",
+      "metadata_file": "outputs/feature_extraction/MT4571710705620200902.json",
+      "name": "SARPY",
+      "rows": 253,
+      "sealed_file": "sealed/MT4571710705620200902.parquet",
+      "sealed_sha256": "d8ed6559d20a4e93eb408ecb75a32ba1a29653f67aa4e17e29930e0844b2b5da",
+      "slot_rank": 5
+    },
+    {
+      "fire_id": "ID4601211691120210707",
+      "h3_sha256": "0b56eb8d29560e68f55c5e92a9cf35c349ab4aa32051b883c91ab2a7c330cc04",
+      "metadata_file": "outputs/feature_extraction/ID4601211691120210707.json",
+      "name": "SHOVEL CREEK",
+      "rows": 589,
+      "sealed_file": "sealed/ID4601211691120210707.parquet",
+      "sealed_sha256": "321d622181429ca211a2a1e724254b88044d9c83d62f32009f4c44178ebf5671",
+      "slot_rank": 6
+    },
+    {
+      "fire_id": "CA4005312066920190904",
+      "h3_sha256": "ba4e44499d20b23304f6d30799ca8366496721a4510531c5a8a6cb9987819e9e",
+      "metadata_file": "outputs/feature_extraction/CA4005312066920190904.json",
+      "name": "WALKER",
+      "rows": 284,
+      "sealed_file": "sealed/CA4005312066920190904.parquet",
+      "sealed_sha256": "7d80a4ef82e545b2d825baa9f484087f42c84565ad523edc214f1e80d94fb6bb",
+      "slot_rank": 7
+    },
+    {
+      "fire_id": "NM3320410805920220514",
+      "h3_sha256": "f77d7e313a59bec67e0270ad4f921de582d0447344a4cf58dcf3768a3dcee3b9",
+      "metadata_file": "outputs/feature_extraction/NM3320410805920220514.json",
+      "name": "BLACK",
+      "rows": 1448,
+      "sealed_file": "sealed/NM3320410805920220514.parquet",
+      "sealed_sha256": "b1761ad099a796e66921d0d51ff469951459b0358f9c589d9c88da4f1f1be077",
+      "slot_rank": 8
+    },
+    {
+      "fire_id": "OR4542811673920220830",
+      "h3_sha256": "5ef850c86dc3fbe4c918f65dc064371f3470958bf9103dfa5bc1f4d7b7d16481",
+      "metadata_file": "outputs/feature_extraction/OR4542811673920220830.json",
+      "name": "DOUBLE CREEK",
+      "rows": 900,
+      "sealed_file": "sealed/OR4542811673920220830.parquet",
+      "sealed_sha256": "bf21cfe1fc7589d69bf58f1602164f205155973cc6422238f24b01d0ba3410ab",
+      "slot_rank": 9
+    },
+    {
+      "fire_id": "CA3528611528620230728",
+      "h3_sha256": "35c2667ce0046bf297693955a20c07baaee7bc37f02d097a053efe21643f8ce9",
+      "metadata_file": "outputs/feature_extraction/CA3528611528620230728.json",
+      "name": "YORK",
+      "rows": 410,
+      "sealed_file": "sealed/CA3528611528620230728.parquet",
+      "sealed_sha256": "65984c64e80262c64e82e3407338b05dbfab72d5c52cb4e41af03cdddd87434e",
+      "slot_rank": 10
+    }
+  ],
+  "population_freeze_sha256": "740b1186e893189606411ada3f0c7c59dc8e97ff5c54ed661ca5d714947a2c7c",
+  "schema": "alphaearth_mtbs_sealed_manifest_v1"
+}

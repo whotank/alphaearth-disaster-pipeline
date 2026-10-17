@@ -1,0 +1,77 @@
+{
+  "center_lat": 34.11702578055573,
+  "center_lon": -118.79939744076604,
+  "created_at_utc": "2026-08-30T03:49:12Z",
+  "data_path": "outputs/reo2_fire_lava_visual_pair/woo/alphaearth_ecs_rectangle_post_window_2018_2020.parquet",
+  "data_sha256": "d26d0e666717364fbd5da78314a7a002cc26a422e588e2ceedbd4369a9969731",
+  "earth_engine": {
+    "batch_size": 500,
+    "collection": "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL",
+    "project_supplied_by_caller": true,
+    "scale_m": 10,
+    "tile_scale": 4
+  },
+  "event_key": "woolsey_fire_2018__post_window_2018_2020",
+  "fingerprint": "09876fb4d1095a4442bf1e51a47c2a5dae177f31b818afba7bff3d443d0b7fab",
+  "finite_ecs_h3_count": 8574,
+  "h3_resolution": 8,
+  "h3_sha256": "77364204fd3796e9141106268ab24a076cffa3142e36c6780c56bdefc71e216e",
+  "original_h3_count": 434,
+  "payload_sha256": "2c7f616fbc256605f692eede95a9fe640a4038aceb86b54246e170985e268127",
+  "post_year": 2020,
+  "pre_year": 2018,
+  "rectangle": {
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            -118.18890312815161,
+            33.7756372097993
+          ],
+          [
+            -118.18399957462574,
+            34.45533658990149
+          ],
+          [
+            -119.41479530690626,
+            34.45533658990149
+          ],
+          [
+            -119.40989175338038,
+            33.7756372097993
+          ],
+          [
+            -118.18890312815161,
+            33.7756372097993
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "height_m": 75397.64685036827,
+    "south_north_radius_multiplier": 2.0,
+    "west_east_radius_multiplier": 3.0,
+    "width_m": 113096.4702755524
+  },
+  "rectangle_h3_count": 10408,
+  "reference_circle_radius_m": 18849.411712592067,
+  "render": {
+    "normalization": "variant-wide IQR z-score followed by linear min-max to [0,1]",
+    "original_circle_outline": {
+      "color": "#00E5FF",
+      "style": "dashed"
+    },
+    "path": "outputs/reo2_fire_lava_visual_pair/woo/alphaearth_ecs_mask_post_window_2018_2020.png",
+    "sha256": "3eaac8ed0a703e1eb4fd9701945cd4acb0673fa213870decdba379202e67706e"
+  },
+  "schema": "fire_lava_ecs_rectangle_v1",
+  "source_kind": "heldout_mtbs_sealed",
+  "source_sha256": "305b01fd18d904677fb3b440d565b002ddd3d78373321ea87c8744af1b950c56",
+  "temporal_variant": {
+    "base_event_key": "woolsey_fire_2018",
+    "interpretation": "Availability-supported shifted window on the identical spatial support; it is not an event-free placebo when an endpoint is the incident year.",
+    "post_year": 2020,
+    "pre_year": 2018,
+    "variant_key": "post_window_2018_2020"
+  }
+}

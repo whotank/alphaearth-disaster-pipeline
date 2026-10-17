@@ -1,0 +1,167 @@
+{
+  "attempt_sequence": 7,
+  "candidate_rank": 7,
+  "candidate_role": "primary",
+  "duration_seconds": 21.55982516700169,
+  "eligible": false,
+  "failed_gate": "P05",
+  "failure": "MTBS reference is nonfinite or constant",
+  "fire_id": "KS3910009890020211215",
+  "freeze_sha256": "eb204cfc9d4a16d9c27db4d7641c4ebf3e6fc98ae637ed71a9a7c50a4a32794e",
+  "gate_results": {
+    "P01_boundary_metadata": "pass",
+    "P01_raster_parse": "pass",
+    "P02_exact_overlap": "pass",
+    "P04_crs_scale_product": "pass",
+    "P04_source_identity": "pass",
+    "P05": "fail"
+  },
+  "h3_center_cells": 644,
+  "h3_mtbs_supported_cells": 555,
+  "metadata_mismatches": [],
+  "name": "FOUR COUNTY",
+  "overlap_audit": {
+    "all_time_union_fraction": 0.056838656184971185,
+    "all_time_union_intersection_m2": 28287560.93971784,
+    "area_crs": "EPSG:6933",
+    "candidate_area_m2": 497681733.495969,
+    "intersections": [
+      {
+        "candidate_fraction": 0.04806452845033149,
+        "fire_id": "KS3905609922819890314",
+        "fire_name": "UNNAMED",
+        "ignition_date": "1989-03-14",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 23920837.838827297
+      },
+      {
+        "candidate_fraction": 0.00877412773463974,
+        "fire_id": "KS3903109918620240411",
+        "fire_name": "CODELL RD",
+        "ignition_date": "2024-04-11",
+        "in_y_minus_1_to_y_plus_1": false,
+        "intersection_area_m2": 4366723.100890565
+      }
+    ],
+    "temporal_union_fraction": 0.0,
+    "temporal_union_intersection_m2": 0.0,
+    "temporal_window": [
+      2020,
+      2022
+    ]
+  },
+  "protocol_sha256": "14ea4b1ae082f599ac0aa6b5984acb9672a5e1d54621af627333ceffd8ac20b5",
+  "raster_class_histogram": {
+    "0": 731041,
+    "1": 53484,
+    "2": 657148,
+    "5": 38,
+    "6": 2249
+  },
+  "raster_metadata": {
+    "class_semantics": {
+      "excluded": [
+        0,
+        6,
+        "NoData"
+      ],
+      "primary_positive_classes": [
+        3,
+        4
+      ],
+      "valid_reference_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "collection": "USFS/GTAC/MTBS/annual_burn_severity_mosaics/v1",
+    "download_projection": {
+      "bounds": [
+        -99.34917884719849,
+        38.996135978213665,
+        -98.7314972578379,
+        39.165917566912256
+      ],
+      "count": 1,
+      "crs": "EPSG:4326",
+      "dtype": "uint8",
+      "height": 630,
+      "nodata": 0.0,
+      "requested_scale_m": 30,
+      "resolution": [
+        0.00026949458523585647,
+        0.00026949458523585647
+      ],
+      "resolution_m_at_center": [
+        23.318697037341664,
+        29.91848853104622
+      ],
+      "width": 2292
+    },
+    "image_count": 1,
+    "image_index_sha256": "13eb8bca3ce97d1b7f6b6ab118d7dd6e5229a6de863a3ba1e0073e6f35ef349f",
+    "image_indexes": [
+      "mtbs_CONUS_2021"
+    ],
+    "native_projection": {
+      "crs": "EPSG:4326",
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "type": "Projection"
+    },
+    "year": 2021
+  },
+  "replacement_for": null,
+  "slot_primary_fire_id": "KS3910009890020211215",
+  "slot_primary_name": "FOUR COUNTY",
+  "source_entries": [
+    {
+      "bytes": 718,
+      "kind": "arcgis_geojson",
+      "layer": 62,
+      "relative_path": "raw/mtbs/KS3910009890020211215/official_point.geojson",
+      "sha256": "d20f712b70756fbe570387098205578028b145cc092dc46f31111e293f772343",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_MTBS_01/MapServer/62/query?f=geojson&outSR=4326&returnGeometry=true&where=fire_id%3D%27KS3910009890020211215%27&outFields=%2A"
+    },
+    {
+      "bytes": 1252854,
+      "kind": "arcgis_geojson",
+      "layer": 63,
+      "relative_path": "raw/mtbs/KS3910009890020211215/official_boundary.geojson",
+      "sha256": "3d003c27829ca798480a67ec0ecac351b0b1c66a674db37428db201d717634dd",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_MTBS_01/MapServer/63/query?f=geojson&outSR=4326&returnGeometry=true&where=fire_id%3D%27KS3910009890020211215%27&outFields=%2A"
+    },
+    {
+      "bytes": 1320880,
+      "kind": "arcgis_geojson",
+      "layer": 63,
+      "relative_path": "raw/mtbs/KS3910009890020211215/intersections_0000.geojson",
+      "sha256": "5f11434388fa7e1b8b331d8f1d0739a13a1de701459a9bb2ed03a33f0779b9fe",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_MTBS_01/MapServer/63/query?f=geojson&outSR=4326&returnGeometry=true&where=1%3D1&outFields=fire_id%2Cfire_name%2Cig_date%2Cfire_type%2Casmnt_type&geometry=%7B%22xmin%22%3A-99.34915666960113%2C%22ymin%22%3A38.99616470324397%2C%22xmax%22%3A-98.73160851480023%2C%22ymax%22%3A39.16586573264736%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelIntersects&resultOffset=0&resultRecordCount=2000&orderByFields=fire_id"
+    },
+    {
+      "bytes": 31939,
+      "collection": "USFS/GTAC/MTBS/annual_burn_severity_mosaics/v1",
+      "kind": "mtbs_severity_download",
+      "relative_path": "raw/mtbs/KS3910009890020211215/severity_download.tif",
+      "sha256": "343371ffcac4a34b8a6f9f8d1b13e966b4d369372dee00b465c4211c154df8cf",
+      "url": "Earth Engine generated download URL (ephemeral; not retained)"
+    },
+    {
+      "bytes": 31939,
+      "kind": "mtbs_severity_geotiff",
+      "relative_path": "raw/mtbs/KS3910009890020211215/severity.tif",
+      "sha256": "343371ffcac4a34b8a6f9f8d1b13e966b4d369372dee00b465c4211c154df8cf"
+    }
+  ],
+  "status": "INELIGIBLE_FROZEN_GATE"
+}

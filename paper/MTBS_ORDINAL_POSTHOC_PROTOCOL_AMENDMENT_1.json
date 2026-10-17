@@ -1,0 +1,35 @@
+{
+  "schema": "mtbs_ordinal_posthoc_protocol_amendment_v1",
+  "created_at": "2026-08-18T23:05:00-04:00",
+  "parent_protocol_sha256": "143a07a339843e37c141a89f034712412093c011128017696e52af96e94106aa",
+  "status": "mandatory_method_correction_after_independent_audit",
+  "disclosure": "An independent audit identified the issue after the first post hoc run and estimated that its numerical effect was small. This amendment is required by geometry semantics regardless of direction or magnitude.",
+  "issue": {
+    "description": "The inherited reducer rounded raster-window lengths after flooring offsets. Depending on fractional offsets, this can omit a final row or column whose pixel centers lie inside an H3 polygon.",
+    "scope": "The frozen primary MTBS target and its published statistics used the inherited reducer. No embedding or optical feature is affected."
+  },
+  "correction": {
+    "window_rule": "For each projected H3 bound, use floor(minimum row and column) and ceil(maximum row and column), clip to raster bounds, then apply the unchanged center-in-polygon mask with all_touched=false.",
+    "new_target_rule": "All newly computed ordinal and cumulative targets use the corrected class counts.",
+    "frozen_primary_rule": "The target named primary_mod_high remains the immutable sealed target and exactly replays the original study. It is not silently recomputed.",
+    "added_sensitivity": {
+      "id": "corrected_mod_high_1_5",
+      "role": "implementation-correction sensitivity",
+      "formula": "(n3 + n4) / (n1 + n2 + n3 + n4 + n5) using corrected counts"
+    }
+  },
+  "population": {
+    "events_unchanged": true,
+    "h3_cells_unchanged": true,
+    "feature_values_unchanged": true,
+    "no_event_replacement": true,
+    "no_cell_exclusion_based_on_corrected_results": true
+  },
+  "reporting": {
+    "report_frozen_and_corrected_moderate_high_targets_together": true,
+    "report_affected_pixel_and_cell_counts": true,
+    "report_target_specific_event_denominators": true,
+    "do_not_revise_primary_manuscript_result": true,
+    "preserve_post_hoc_label": true
+  }
+}

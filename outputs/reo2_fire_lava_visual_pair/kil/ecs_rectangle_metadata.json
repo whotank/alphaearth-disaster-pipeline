@@ -1,0 +1,74 @@
+{
+  "center_lat": 19.477,
+  "center_lon": -154.8668,
+  "created_at_utc": "2026-08-30T03:37:25Z",
+  "data_path": "outputs/reo2_fire_lava_visual_pair/kil/alphaearth_ecs_rectangle.parquet",
+  "data_sha256": "c90ca0491454e5882e6356af5ff2338bde99e41cc7dd61fe6632205d22d4773b",
+  "earth_engine": {
+    "batch_size": 500,
+    "collection": "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL",
+    "project_supplied_by_caller": true,
+    "scale_m": 10,
+    "tile_scale": 4
+  },
+  "event_key": "kilauea_lava_2018",
+  "fingerprint": "9e664a6b50551dc56e956f70e9e88d78e0f278fe2eb0d5ad1892a8e50ccd13dc",
+  "finite_ecs_h3_count": 2557,
+  "h3_resolution": 8,
+  "h3_sha256": "78ae3292302bd45558fd3b04e3e1cd1ec8a5bb116bd238bfcb01d48252b41623",
+  "original_h3_count": 276,
+  "original_support_render": {
+    "path": "outputs/reo2_fire_lava_visual_pair/kil/alphaearth_ecs_original_support_mask.png",
+    "sha256": "e0ec115d5180af1353fab41090248b59809baa05aa2c787161dc09011d2ed33d"
+  },
+  "payload_sha256": "39efc0ffb40ae1f9c314d8b8ac74608debda4ce9e935ea7977a959232fec3f41",
+  "post_year": 2019,
+  "pre_year": 2017,
+  "rectangle": {
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            -154.52435920158376,
+            19.259868111416495
+          ],
+          [
+            -154.52344689672665,
+            19.693477760450005
+          ],
+          [
+            -155.21015310327337,
+            19.693477760450005
+          ],
+          [
+            -155.20924079841623,
+            19.259868111416495
+          ],
+          [
+            -154.52435920158376,
+            19.259868111416495
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "height_m": 48000.0,
+    "south_north_radius_multiplier": 2.0,
+    "west_east_radius_multiplier": 3.0,
+    "width_m": 72000.0
+  },
+  "rectangle_h3_count": 3996,
+  "reference_circle_radius_m": 12000.0,
+  "render": {
+    "normalization": "rectangle-wide IQR z-score followed by linear min-max to [0,1]",
+    "original_circle_outline": {
+      "color": "#00E5FF",
+      "style": "dashed"
+    },
+    "path": "outputs/reo2_fire_lava_visual_pair/kil/alphaearth_ecs_mask.png",
+    "sha256": "11051bbf8934fc132197df090bf9b49e67deb45e2ffcb9553f9052b0a82bd36c"
+  },
+  "schema": "fire_lava_ecs_rectangle_v1",
+  "source_kind": "pipeline_join",
+  "source_sha256": "dfbf390feb22b4860883e6e8903443bdb3e038dae1061d6be6ee8f81c8ce6be9"
+}

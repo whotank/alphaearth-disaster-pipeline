@@ -1,0 +1,27 @@
+{
+  "source_title": "Mauna Loa 2022 summit and Northeast Rift Zone lava flow footprint",
+  "source_id": "USGS DOI 10.5066/P1KES7F4",
+  "source_url": "https://www.sciencebase.gov/catalog/item/669f003ed34eef99d5abbba5",
+  "observation_start": "2022-11-27",
+  "observation_end": "2022-12-10",
+  "license": "Access constraints: none; USGS acknowledgement requested; intended mapping scale 1:5,000 with approximately 10 m ground resolution.",
+  "reference_semantics": "Binary affected-area footprint. Outside the polygon is a valid negative only within the configured analysis AOI.",
+  "prepared_utc": "2026-08-15T23:46:30.075831+00:00",
+  "input_path": "data/references/mauna_loa_2022_usgs/source/MLO_2022_FlowFootprint/MLO_2022_FlowFootprint.shp",
+  "input_sha256": "d1ee91852193e8d6d939b936196276c22062796ba7026934ce230cd948ab51fc",
+  "output_geojson": "data/references/mauna_loa_2022_usgs/lava_flow_footprint.geojson",
+  "output_sha256": "9f3101328b8bd3f2b48b39822742ef53349f3b5a4cfe284e0a97d91586654831",
+  "source_feature_count": 5,
+  "polygon_feature_count": 5,
+  "source_crs": "EPSG:26905",
+  "output_crs": "EPSG:4326",
+  "output_bounds_wgs84": [
+    -155.65919702668796,
+    19.417305580404033,
+    -155.48414475406585,
+    19.67056147077203
+  ],
+  "affected_area_km2": 36.07102762118929,
+  "source_archive": "data/references/mauna_loa_2022_usgs/source.zip",
+  "source_archive_sha256": "99c6578be5d6a727e6328c2ef32f7ac19e8b40dc2fd0fb87cdd56d14dae56755"
+}

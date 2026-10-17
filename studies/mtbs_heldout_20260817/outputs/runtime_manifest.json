@@ -1,0 +1,38 @@
+{
+  "schema": "alphaearth_mtbs_runtime_v1",
+  "stages": {
+    "analysis": {
+      "bootstrap_ci_95": [
+        -0.3934149677531503,
+        0.0785601530541079
+      ],
+      "completed_at_utc": "2026-08-17T16:44:26Z",
+      "duration_seconds": 0.6844149579992518,
+      "events": 10,
+      "mean_D": -0.11579850535759022
+    },
+    "features": {
+      "completed_at_utc": "2026-08-17T16:38:04Z",
+      "duration_seconds": 2381.7629536250024,
+      "events": 10,
+      "population_freeze_sha256": "740b1186e893189606411ada3f0c7c59dc8e97ff5c54ed661ca5d714947a2c7c",
+      "sealed_manifest_sha256": "9a7451582831e87d812268db04791718f21d9366a041c205d4a5b132d905b19a",
+      "total_h3": 6864
+    },
+    "reference": {
+      "attempted": 11,
+      "completed_at_utc": "2026-08-17T15:57:57Z",
+      "duration_seconds": 1311.6017919169972,
+      "eligible": 10,
+      "failed": 1,
+      "population_freeze_sha256": "740b1186e893189606411ada3f0c7c59dc8e97ff5c54ed661ca5d714947a2c7c",
+      "replacements": 1
+    }
+  },
+  "storage_bytes": {
+    "checkpoints": 2437831,
+    "compact_outputs": 1014921,
+    "raw": 68771808,
+    "sealed": 865406
+  }
+}
