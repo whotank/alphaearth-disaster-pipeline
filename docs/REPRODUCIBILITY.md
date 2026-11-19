@@ -21,7 +21,7 @@ population, median AlphaEarth coefficient, AlphaEarth event-bootstrap
 endpoint, TESSERA missingness, and TESSERA endpoint. It performs no network
 calls.
 
-## 2. Rebuild the manuscript and preview
+## 2. Rebuild the manuscript
 
 The manuscript requires a recent TeX Live installation:
 
@@ -32,23 +32,6 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 
 The expected output is a seven-page PDF with four main-text pages, followed by
 references and appendices.
-
-Validate the preview inputs without encoding video:
-
-```bash
-python paper_preview_video/build_preview_video.py --validate-only
-```
-
-To render the MP4:
-
-```bash
-python -m pip install -r paper_preview_video/requirements.txt
-python paper_preview_video/build_preview_video.py
-```
-
-The video manifest records source hashes, frame count, codec, dimensions, and
-duration. The build uses existing project imagery and mapped-reference
-artifacts.
 
 ## 3. Re-extract upstream data
 

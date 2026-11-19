@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software or artifact, please cite the paper below."
 title: "AlphaEarth disaster pipeline and frozen evaluation artifact"
 type: software
-version: 1.0.0
-date-released: 2026-10-16
+version: 1.0.1
+date-released: 2026-11-19
 license: MIT
 repository-code: "https://github.com/whotank/alphaearth-disaster-pipeline"
 url: "https://github.com/whotank/alphaearth-disaster-pipeline"

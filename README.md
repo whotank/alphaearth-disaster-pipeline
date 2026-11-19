@@ -8,10 +8,16 @@ Code and frozen evidence for:
 > NeurIPS 2026.
 
 [Read the camera-ready paper](paper/main.pdf) ·
-[Watch the 72-second preview](paper_preview_video/output/paper_preview_v1.mp4) ·
 [See the citation metadata](CITATION.cff)
 
-![Paper preview](paper_preview_video/output/paper_preview_v1_poster.jpg)
+![Figure 1 of the paper](paper/figure_primary.png)
+
+Figure 1. (a) Imagery, official reference map, and AlphaEarth displacement for
+the 2018 Woolsey Fire and Kīlauea eruption. (b) Within-event Spearman ρ for the
+ten held-out fires: AlphaEarth (blue), stronger optical baseline (gray), and
+TESSERA (orange).
+
+[Watch the 15-second overview (MP4)](https://github.com/whotank/alphaearth-disaster-pipeline/releases/download/v1.0.1/reusable_change_signal_overview.mp4)
 
 ## What this repository evaluates
 
@@ -57,13 +63,6 @@ cd paper
 latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-Validate or rebuild the preview video:
-
-```bash
-python paper_preview_video/build_preview_video.py --validate-only
-python paper_preview_video/build_preview_video.py
-```
-
 ## Repository guide
 
 - `paper/` — camera-ready TeX, bibliography, figure, and compiled PDF.
@@ -73,8 +72,6 @@ python paper_preview_video/build_preview_video.py
   prespecified TESSERA implementation and compact results.
 - `outputs/reo2_development_spatial_robustness/` — non-fire spatial
   sensitivity.
-- `paper_preview_video/` — reproducible, caption-led preview built from study
-  imagery and frozen numbers.
 - `outputs/reo2_fire_lava_visual_pair/` — selected Kīlauea, Rhea, and Woolsey
   visual products used for figures and communication.
 - `docs/` — study, data, and reproducibility details.

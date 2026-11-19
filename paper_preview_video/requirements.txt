@@ -1,3 +1,0 @@
-imageio-ffmpeg
-numpy
-Pillow
